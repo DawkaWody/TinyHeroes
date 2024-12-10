@@ -42,6 +42,18 @@ public class PlayerAnimationController : MonoBehaviour
         _animator.SetBool(_runningBoolId, isRunning);
     }
 
+    public void AnimateAttack(int variant)
+    {
+        if (variant == 1)
+        {
+            _animator.SetTrigger(_attack1TriggerId);
+        }
+        else if (variant == 2)
+        {
+            _animator.SetTrigger(_attack2TriggerId);
+        }
+    }
+
     public void InitiateJump()
     {
         _animator.SetTrigger(_jumpTriggerId);
