@@ -1083,6 +1083,7 @@ GameObject:
   - component: {fileID: 1892244955}
   - component: {fileID: 1892244956}
   - component: {fileID: 1892244960}
+  - component: {fileID: 1892244961}
   m_Layer: 6
   m_Name: PLAYER
   m_TagString: Player
@@ -1296,6 +1297,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c2df39b2-8e81-4075-9e40-ea48ca64a11a
+    m_ActionName: 'Player/Attack1[/Keyboard/w,/DualShock4GamepadHID/buttonWest]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -1316,11 +1321,13 @@ MonoBehaviour:
   _moveActionName: Move
   _jumpActionName: Jump
   _runActionName: Sprint
+  _attack1ActionName: Attack1
   Movement: {x: 0, y: 0}
   JumpWasPressed: 0
   JumpIsHeld: 0
   JumpWasReleased: 0
   RunIsHeld: 0
+  Attack1WasPressed: 0
 --- !u!114 &1892244957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1398,6 +1405,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dustFxPrefab: {fileID: 5878658025718041718, guid: aad6841df8728814d9c94498edcd7e1d, type: 3}
+--- !u!114 &1892244961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892244951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d3c758f85644146a50caf7e8c9bece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2112993237
 GameObject:
   m_ObjectHideFlags: 0
