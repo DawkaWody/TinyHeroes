@@ -16,9 +16,9 @@ public class PlayerAttackController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_inputHandler.Attack1WasPressed)
+        if (_inputHandler.Attack1WasPressed && !_animationController.IsInAirOrJumping())
         {
-            Debug.Log("attack");
+            _animationController.AnimateAttack(1);
         }
     }
 }
