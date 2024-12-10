@@ -41,3 +41,12 @@ The following packages were added:
 The following packages were updated:
   com.unity.collab-proxy from version 2.4.4 to 2.5.2
   com.unity.inputsystem from version 1.9.0 to 1.11.1
+
+=== Tue Dec 10 19:24:37 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.inputsystem from version 1.11.1 to 1.11.2
+  com.unity.visualscripting from version 1.9.4 to 1.9.5
