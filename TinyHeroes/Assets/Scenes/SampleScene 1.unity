@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 239672213}
   m_Layer: 6
   m_Name: BodyColl
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 480874287}
   m_Layer: 6
   m_Name: FeetColl
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -565,7 +565,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3771531354582808071, guid: 65b8e178ae73a1f42a3378d5162c7180, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.932
+      value: -2.341
       objectReference: {fileID: 0}
     - target: {fileID: 3771531354582808071, guid: 65b8e178ae73a1f42a3378d5162c7180, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1762,7 +1762,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3771531354582808071, guid: 65b8e178ae73a1f42a3378d5162c7180, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.932
+      value: -1.278
       objectReference: {fileID: 0}
     - target: {fileID: 3771531354582808071, guid: 65b8e178ae73a1f42a3378d5162c7180, type: 3}
       propertyPath: m_LocalPosition.y
