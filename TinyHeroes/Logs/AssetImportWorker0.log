@@ -460,3 +460,963 @@ Received Import Request.
 Start importing Assets/Scripts/Camera/CameraPlayerFollow.cs using Guid(30e53c85c3d2d9b4d9e74038827f7f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47134f16ddce16721659fe819c715001') in 0.0009041 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
+========================================================================
+Received Import Request.
+  Time since last request: 101.442283 seconds.
+  path: Assets/InputSystem_Actions.inputactions
+  artifactKey: Guid(314b6f28eddbbd54ebcae8f7b6592c25) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/InputSystem_Actions.inputactions using Guid(314b6f28eddbbd54ebcae8f7b6592c25) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '377a6cbfc9d800efb4f6761df786025d') in 0.4320023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_57.asset
+  artifactKey: Guid(47a268494e5500043a29f77763e747e0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_57.asset using Guid(47a268494e5500043a29f77763e747e0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'dcdf63143de5a8719783aba9117e9285') in 0.0329834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_5.asset
+  artifactKey: Guid(764c602a27c648d42b4f598edf794490) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_5.asset using Guid(764c602a27c648d42b4f598edf794490) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '56612f20ed233b27255dc5691476b22b') in 0.0117167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_41.asset
+  artifactKey: Guid(9608a59e7d54dda4d865c8d4a9f3e3f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_41.asset using Guid(9608a59e7d54dda4d865c8d4a9f3e3f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4a98b54093cf9ef27356b6df6daaaacd') in 0.0208577 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Graphics/Tilesets/Tiles.png
+  artifactKey: Guid(1c57da1fc398ddc449e00d6aa8d54199) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Tilesets/Tiles.png using Guid(1c57da1fc398ddc449e00d6aa8d54199) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '775fb15b85b68050819379dbcf6a6b7e') in 0.1367882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 49
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_32.asset
+  artifactKey: Guid(1ab07d0d175c3e346b97e3b92e142be3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_32.asset using Guid(1ab07d0d175c3e346b97e3b92e142be3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd27f0b494c6c455f72f2672dedc3d646') in 0.0162528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_47.asset
+  artifactKey: Guid(c59e6f483af97654dbaca2d9a2063840) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_47.asset using Guid(c59e6f483af97654dbaca2d9a2063840) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ed8e390e696a38c611b22497aacdf54a') in 0.0207376 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_77.asset
+  artifactKey: Guid(b614a198b4be8474c827e3671e929830) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_77.asset using Guid(b614a198b4be8474c827e3671e929830) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7e6eea9760df8c70175920a5289fffef') in 0.0170349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ScriptableObjects/PlayerMovementStats1.asset
+  artifactKey: Guid(5af0de56624022e4cb4606edf02b977d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/ScriptableObjects/PlayerMovementStats1.asset using Guid(5af0de56624022e4cb4606edf02b977d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f4c023b0bc992958e1224446b83b2e95') in 0.016349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Fonts/Planes_ValMore.ttf
+  artifactKey: Guid(6582fb5652941f14f8ff2d467639a2b0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Fonts/Planes_ValMore.ttf using Guid(6582fb5652941f14f8ff2d467639a2b0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '15699d409d6cf581c28bb7914f53295a') in 0.0213974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Settings/Lit2DSceneTemplate.scenetemplate
+  artifactKey: Guid(6eb1afa53b5705d4598cf5332a61da5e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Settings/Lit2DSceneTemplate.scenetemplate using Guid(6eb1afa53b5705d4598cf5332a61da5e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b93ac3b867b58a1874011341ea0fb507') in 0.0601207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_44.asset
+  artifactKey: Guid(2203e1b718c378f449e97f8168634379) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_44.asset using Guid(2203e1b718c378f449e97f8168634379) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b2ea4e3d4869576ebfc46b56506f43e7') in 0.0147623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_70.asset
+  artifactKey: Guid(e6bb05b6248234945b6d64023af29053) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_70.asset using Guid(e6bb05b6248234945b6d64023af29053) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1759b4ac458dd028180f74acf036e6bd') in 0.0148088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_51.asset
+  artifactKey: Guid(0cda353a7d784714e9c4f79bc649b20a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_51.asset using Guid(0cda353a7d784714e9c4f79bc649b20a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '339b033e98bd3cd59fef4a379e76331c') in 0.0147311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_82.asset
+  artifactKey: Guid(9a23c4ff63b8e5140915bd13d89cc399) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_82.asset using Guid(9a23c4ff63b8e5140915bd13d89cc399) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '51cbad9cad599ac05eaff7438ea67368') in 0.0138746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Graphics/Tilesets/generic_platformer_tiles.png
+  artifactKey: Guid(99b4b9bcef7e447478c6734e1136aedc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Tilesets/generic_platformer_tiles.png using Guid(99b4b9bcef7e447478c6734e1136aedc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '60d290a3adb49fdeaa52433df354539a') in 0.1754867 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 96
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_12.asset
+  artifactKey: Guid(e1c786292cc6e7949bf2838ef9a610d3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_12.asset using Guid(e1c786292cc6e7949bf2838ef9a610d3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2ce0812bec5d5245ae0dfe8b56f53d00') in 0.0113449 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_10.asset
+  artifactKey: Guid(9553249ea31f7f44ebce0a23e8a3a5bb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_10.asset using Guid(9553249ea31f7f44ebce0a23e8a3a5bb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2f2e2fcb5b05472d645a67c72c3d93db') in 0.0100596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_87.asset
+  artifactKey: Guid(b8f5d521226db384c894423f59ccbaac) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_87.asset using Guid(b8f5d521226db384c894423f59ccbaac) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '859316339b635f65dc2b368f337b83cf') in 0.0152673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_93.asset
+  artifactKey: Guid(7e88fedaf6594604da715445405dc1ae) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_93.asset using Guid(7e88fedaf6594604da715445405dc1ae) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1be39f907a4ed9d6e89c8b8ff22c379e') in 0.0148308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_3.asset
+  artifactKey: Guid(0b82296e19a3dd34cb6cc8265897cb69) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_3.asset using Guid(0b82296e19a3dd34cb6cc8265897cb69) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ae0c91ed61498f80ec0da28e9da29ccb') in 0.0103622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scripts/Dust.cs
+  artifactKey: Guid(583b6321906160f42937b707839dfaa1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/Dust.cs using Guid(583b6321906160f42937b707839dfaa1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c6f579bcdf0f7263b902c9137050fe3e') in 0.0081943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_23.asset
+  artifactKey: Guid(efd7a124a5d51dd4686cd1d3a5ec3211) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_23.asset using Guid(efd7a124a5d51dd4686cd1d3a5ec3211) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd6f7b26cd95aec43a5f8d771600b65d0') in 0.0099949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_69.asset
+  artifactKey: Guid(fc239cb8fecbaba4e8268fb18e10f9c9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_69.asset using Guid(fc239cb8fecbaba4e8268fb18e10f9c9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7c0215f2375e5899d37f26418a9a51d0') in 0.0156784 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scripts/Player/PlayerMovementController.cs
+  artifactKey: Guid(9da847a549f4d6543872f501328ccd68) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/Player/PlayerMovementController.cs using Guid(9da847a549f4d6543872f501328ccd68) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd39e7a09ece70a117e8ef0577ce6ad53') in 0.007643 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_18.asset
+  artifactKey: Guid(6a7a5dc727075554ba8d5219aa6cbd71) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_18.asset using Guid(6a7a5dc727075554ba8d5219aa6cbd71) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd6e8fd0ce92c1105a7951d1bc2fc7abe') in 0.0174239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_0.asset
+  artifactKey: Guid(6ef034d539850a24c804acc8ccf38d3f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_0.asset using Guid(6ef034d539850a24c804acc8ccf38d3f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '47934957d6bc94fc6de13e161115225a') in 0.0114131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_52.asset
+  artifactKey: Guid(deaa3afb8f065a5419478f99b9f35218) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_52.asset using Guid(deaa3afb8f065a5419478f99b9f35218) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '82d99d0d551ef83ef61ad55a623a8b53') in 0.0170116 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_48.asset
+  artifactKey: Guid(465f112f01ae938498c3ec97a51d9073) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_48.asset using Guid(465f112f01ae938498c3ec97a51d9073) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd3c08c3f4cc67995f99dfdcebedc9b2b') in 0.0146466 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scripts/DeviceManager.cs
+  artifactKey: Guid(8d7b4c59453e6f449b2f8e79be143e5f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/DeviceManager.cs using Guid(8d7b4c59453e6f449b2f8e79be143e5f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7068a8fc19a9cb07f4421ede61699771') in 0.0084964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_46.asset
+  artifactKey: Guid(825fdb946e20926498fcfceab4137aee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_46.asset using Guid(825fdb946e20926498fcfceab4137aee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8169dd5d19517d80ae3e1de9b9cb947f') in 0.0148904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_16.asset
+  artifactKey: Guid(579255a1b9ef7eb4b954e55a511b5146) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_16.asset using Guid(579255a1b9ef7eb4b954e55a511b5146) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6687c437f85b9f86375b3a29eaa965a2') in 0.015145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_19.asset
+  artifactKey: Guid(a4b1d70a269c99a4098973b26701f187) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_19.asset using Guid(a4b1d70a269c99a4098973b26701f187) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b52760ccb0c727a4583839734171fa25') in 0.0151367 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_27.asset
+  artifactKey: Guid(fda0cab2f2798e14d9893b396d424931) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_27.asset using Guid(fda0cab2f2798e14d9893b396d424931) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a50d82b6faba17ec48c5e45f9840e80f') in 0.0101958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Animations/Characters/Bleeb/Land.anim
+  artifactKey: Guid(36816765bae5fd249b299563204222ac) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Animations/Characters/Bleeb/Land.anim using Guid(36816765bae5fd249b299563204222ac) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '903c8c35ca459ea9fd2819f291aa1c7b') in 0.0169921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_38.asset
+  artifactKey: Guid(f19c98bbbd0169a40ba738eabeb03253) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_38.asset using Guid(f19c98bbbd0169a40ba738eabeb03253) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '60be63d2eb2f7f3d63adda708731ef3f') in 0.0097604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_30.asset
+  artifactKey: Guid(d7770b05a26a85b43bfb49e9ca5f97d5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_30.asset using Guid(d7770b05a26a85b43bfb49e9ca5f97d5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '06452aaedc992ff4563f8b078cc8daaf') in 0.0098154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_46.asset
+  artifactKey: Guid(1645448339370fe4a9d8fbe4250f3283) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_46.asset using Guid(1645448339370fe4a9d8fbe4250f3283) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fb82b44922fa9c7495507b5c707f6ca0') in 0.0101208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_41.asset
+  artifactKey: Guid(b4d7cf71637f024419ca8d9b5d0d0407) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_41.asset using Guid(b4d7cf71637f024419ca8d9b5d0d0407) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '50ac666ee8c0d5bec7dcc1b907a33e5e') in 0.0106725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_37.asset
+  artifactKey: Guid(5407dd3f0d6f446438e0f82209a07027) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_37.asset using Guid(5407dd3f0d6f446438e0f82209a07027) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '15ae69575c12630cae9984badb6a4360') in 0.0108091 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_6.asset
+  artifactKey: Guid(93dee8dd27d567b48b40c6671f3ebf5a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_6.asset using Guid(93dee8dd27d567b48b40c6671f3ebf5a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5cbc86a656f8f24e50a0806e9f7b0e85') in 0.0096513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_25.asset
+  artifactKey: Guid(a2a354aa4fbe9ef4b94dfabc3acb1544) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_25.asset using Guid(a2a354aa4fbe9ef4b94dfabc3acb1544) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ee7f78ddaff25ca8c3b91310911894e1') in 0.0113007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_26.asset
+  artifactKey: Guid(52e04cc8452400747bc5f2cadc599def) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_26.asset using Guid(52e04cc8452400747bc5f2cadc599def) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'eaf3d26227de7c65234b743d07192c5b') in 0.0102376 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Animations/Characters/Bleeb/Attack2.anim
+  artifactKey: Guid(5566ced24ab3ef442bfd4464c2ac6b40) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Animations/Characters/Bleeb/Attack2.anim using Guid(5566ced24ab3ef442bfd4464c2ac6b40) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e76087539fa745493a9919c744d39e7f') in 0.0103075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_39.asset
+  artifactKey: Guid(bbfd5a98337970b4bb686bddaeed74ff) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_39.asset using Guid(bbfd5a98337970b4bb686bddaeed74ff) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5405b696dbc8f756890f21eb1670184a') in 0.0095268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_88.asset
+  artifactKey: Guid(bd8884362abf8e440aa79c13a04762bd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_88.asset using Guid(bd8884362abf8e440aa79c13a04762bd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2e024f80966de4dc7b9fa8ec221d3337') in 0.0146528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_64.asset
+  artifactKey: Guid(d89295d62aedbfa42b8b8308ca43dc42) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_64.asset using Guid(d89295d62aedbfa42b8b8308ca43dc42) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '088353f97a48973cac2c34b6697fc996') in 0.0192574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_81.asset
+  artifactKey: Guid(3f3884d4e0397ba49a7216b788b337ec) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_81.asset using Guid(3f3884d4e0397ba49a7216b788b337ec) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b55a29bc0fd6596604524c7fc698136c') in 0.0137121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Graphics/Characters/1 Pink_Monster/Double_Jump_Dust_5.png
+  artifactKey: Guid(289c99be8d9fe164b85d81aaad377a82) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/1 Pink_Monster/Double_Jump_Dust_5.png using Guid(289c99be8d9fe164b85d81aaad377a82) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f89e31c6b120d0a0294508d3100fb8c6') in 0.0239787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_21.asset
+  artifactKey: Guid(abc0343b22e5a6f40b96ba0570b1964e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_21.asset using Guid(abc0343b22e5a6f40b96ba0570b1964e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '478c66ea2c746b21b2235e52ed42257e') in 0.0103303 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/Player/PlayerInputHandler.cs
+  artifactKey: Guid(4011f59f6d24f304dbfcf3481811f62f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/Player/PlayerInputHandler.cs using Guid(4011f59f6d24f304dbfcf3481811f62f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'eba2fa83d8e5776af8ea822c5ffd04bd') in 0.0104731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_14.asset
+  artifactKey: Guid(a06a0138abf07ee47bb5e9dd98632312) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_14.asset using Guid(a06a0138abf07ee47bb5e9dd98632312) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5b3ca22e411154e15c24a85b1e4e84d4') in 0.0135276 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scripts/GLOBALS.cs
+  artifactKey: Guid(0a654a3ab0244744c8d426faac6142fb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/GLOBALS.cs using Guid(0a654a3ab0244744c8d426faac6142fb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0f3bb26d86b3d1de0cce721dfcfd9d64') in 0.007075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_49.asset
+  artifactKey: Guid(d64a50319772e294789b1892fb653fea) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_49.asset using Guid(d64a50319772e294789b1892fb653fea) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f2ea204694a576a9e81b49778f39092f') in 0.0138575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_24.asset
+  artifactKey: Guid(c341b6492b3d4c64eafbf5eacab07b77) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_24.asset using Guid(c341b6492b3d4c64eafbf5eacab07b77) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '74fe0aee72f28ab9a7fe57f7098332b0') in 0.0145711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Hurt_4.png
+  artifactKey: Guid(cad0f9bcd1663c9479849a414c0b0c05) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Hurt_4.png using Guid(cad0f9bcd1663c9479849a414c0b0c05) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '06b9291a27fb8e8c19744e921c14b2e1') in 0.0190249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster.png
+  artifactKey: Guid(aedbcdd9b88584749b88f8f853bf7854) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster.png using Guid(aedbcdd9b88584749b88f8f853bf7854) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ecbdda9118bb86194e80c20d42d0a48c') in 0.0202595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Run_6.png
+  artifactKey: Guid(855852a660002f74888bd1d2c064dfc3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Run_6.png using Guid(855852a660002f74888bd1d2c064dfc3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5446d88e9447bb58e7c00fa2c0978c5b') in 0.0206194 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Death_8.png
+  artifactKey: Guid(6669fa5763275324b9301ef0fc3b49d8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Death_8.png using Guid(6669fa5763275324b9301ef0fc3b49d8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fd8418b961004da15896aaef60da4e42') in 0.0296384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Push_6.png
+  artifactKey: Guid(64456e078d8e82640a32d81bdf961438) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Push_6.png using Guid(64456e078d8e82640a32d81bdf961438) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bac3c88c4975160e5a73e913d15e7de4') in 0.0229192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Run_6.png
+  artifactKey: Guid(1344ced5184559943a39715cc48fe702) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Run_6.png using Guid(1344ced5184559943a39715cc48fe702) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3d1f902da0e0622146c97dce1155dd9c') in 0.0221868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Idle_4.png
+  artifactKey: Guid(34109ab4d411d1949bd94fd9c1ce58eb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Idle_4.png using Guid(34109ab4d411d1949bd94fd9c1ce58eb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd0c317600750e34657487e53c91bcdcd') in 0.0214525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Graphics/Characters/1 Pink_Monster/Rock2.png
+  artifactKey: Guid(a94753578a85512429a8ac999268de6f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/1 Pink_Monster/Rock2.png using Guid(a94753578a85512429a8ac999268de6f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4025769038c5bd0a5484314e3a292fa4') in 0.0170792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Attack2_6.png
+  artifactKey: Guid(7e6873b594c416c4980f15692b008353) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Attack2_6.png using Guid(7e6873b594c416c4980f15692b008353) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9109607e7cb6601238413d68937e5078') in 0.0294796 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Attack1_4.png
+  artifactKey: Guid(92bb6fe8e7c20844e8e045bc7d73a748) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Attack1_4.png using Guid(92bb6fe8e7c20844e8e045bc7d73a748) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b6afbab9cb0362810b4514f43cc4dc70') in 0.0190901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Hurt_4.png
+  artifactKey: Guid(1bf353ae5f138224995c43102974f12d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Hurt_4.png using Guid(1bf353ae5f138224995c43102974f12d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9060e0f178488b8e09c94c45884672d9') in 0.024407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Graphics/Characters/2 Owlet_Monster/Walk_Run_Push_Dust_6.png
+  artifactKey: Guid(74dc9f3fe7820fd4f9fbedd818a44b8c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/2 Owlet_Monster/Walk_Run_Push_Dust_6.png using Guid(74dc9f3fe7820fd4f9fbedd818a44b8c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '408c8048dbbdeaa97a37525b70e6c974') in 0.0261412 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Climb_4.png
+  artifactKey: Guid(bc66598ab8e83c14faa7ac1d9c8b54e0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Climb_4.png using Guid(bc66598ab8e83c14faa7ac1d9c8b54e0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '73dc7fef8c4a6a03721d8ae4ac409009') in 0.0227543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Death_8.png
+  artifactKey: Guid(b1967e31014570746bf01213e7a31226) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Death_8.png using Guid(b1967e31014570746bf01213e7a31226) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'afc79a0f2298eb125117d481188f59f1') in 0.0304981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Jump_8.png
+  artifactKey: Guid(63b655307eeaa894e9d94ce3348f68e2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Jump_8.png using Guid(63b655307eeaa894e9d94ce3348f68e2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fb534a53349d26ad73f22745e4042209') in 0.0320175 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Walk+Attack_6.png
+  artifactKey: Guid(21479b7c5de9c30469008d4083fd5942) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Walk+Attack_6.png using Guid(21479b7c5de9c30469008d4083fd5942) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fccd5292bab8538889f3f8f5ac43622b') in 0.0326954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Run_6.png
+  artifactKey: Guid(89ccda7a6b0cec94384a09385fcd9d65) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Run_6.png using Guid(89ccda7a6b0cec94384a09385fcd9d65) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3fd899481ee14d744885f962c359c1bc') in 0.0289961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster.png
+  artifactKey: Guid(04ba7b3140cd6e147979e9f5754c618e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster.png using Guid(04ba7b3140cd6e147979e9f5754c618e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2ec58ac7f5a2a6eb85d7d36b635916f1') in 0.0156829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_43.asset
+  artifactKey: Guid(f8dbd37e7f1be46489ddcadd5b289828) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_43.asset using Guid(f8dbd37e7f1be46489ddcadd5b289828) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '95a60e267b5dcedfe5ef00570415267c') in 0.012102 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_90.asset
+  artifactKey: Guid(267d0abda3964934cad4497e19aa85cb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_90.asset using Guid(267d0abda3964934cad4497e19aa85cb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ddd7e6006ce55deae2a14fff99246100') in 0.0145465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Jump_8.png
+  artifactKey: Guid(8b30c0f5e91a2ff4f96ced4c32f1a41f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Jump_8.png using Guid(8b30c0f5e91a2ff4f96ced4c32f1a41f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cb8ee8b360ef10d216fdb8f79253c3a8') in 0.0324842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/Camera/CameraPlayerFollow.cs
+  artifactKey: Guid(30e53c85c3d2d9b4d9e74038827f7f7a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/Camera/CameraPlayerFollow.cs using Guid(30e53c85c3d2d9b4d9e74038827f7f7a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a93de82574d856ca81b430aa973dbaa6') in 0.0079671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_42.asset
+  artifactKey: Guid(9eb8943b1ad3f36459cb7c40b3d8c6d8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_42.asset using Guid(9eb8943b1ad3f36459cb7c40b3d8c6d8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '65e9a0115e9bf7daa40b8c84a0fa4cc3') in 0.0157093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/Camera/CameraManager.cs
+  artifactKey: Guid(b4ff25b2394081b4c830da58c45d608c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/Camera/CameraManager.cs using Guid(b4ff25b2394081b4c830da58c45d608c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7b341e9f26d45d151d11b78688d2bf7e') in 0.0078518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/TilePalletes/Land/Land.prefab
+  artifactKey: Guid(7f0565cb50164e143b37457fcf029cd2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/Land.prefab using Guid(7f0565cb50164e143b37457fcf029cd2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1a964449a976138b37ffcb75f87ed8a2') in 0.052495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Settings/Scenes/URP2DSceneTemplate.unity
+  artifactKey: Guid(b5f1e9c831909b345bf3acd52989abb7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Settings/Scenes/URP2DSceneTemplate.unity using Guid(b5f1e9c831909b345bf3acd52989abb7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '83830d1c748bc187f7eb9cbd736eff68') in 0.0079848 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_2.asset
+  artifactKey: Guid(46cd3a1e3ef1d324c8fed2f183a83515) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_2.asset using Guid(46cd3a1e3ef1d324c8fed2f183a83515) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8c9e31e49b8a8d887f6cb4f15bd5b06d') in 0.0100387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_56.asset
+  artifactKey: Guid(7d04c3459063bc24a9b145041387e5f2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_56.asset using Guid(7d04c3459063bc24a9b145041387e5f2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f8450e0b174af85d910d324275bd9d53') in 0.0138934 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003764 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Rock1.png
+  artifactKey: Guid(8089f216ff02ee945be080eb227be1f6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Rock1.png using Guid(8089f216ff02ee945be080eb227be1f6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b66648640910a8392f0e30eb48eb5257') in 0.0146788 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Settings/UniversalRP.asset
+  artifactKey: Guid(a2ce3390f2080134694c18c8805c1874) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Settings/UniversalRP.asset using Guid(a2ce3390f2080134694c18c8805c1874) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '46e0404399e15fbb454e0747014ca6c6') in 0.0504649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Idle_4.png
+  artifactKey: Guid(427f4c5d7ad270d4caa94ebb1d227722) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster_Idle_4.png using Guid(427f4c5d7ad270d4caa94ebb1d227722) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b231e007b84495edfa8d30e9e02d39ab') in 0.0213981 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Climb_4.png
+  artifactKey: Guid(e657ae44bbe46e449b99b66b1394e2c7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Climb_4.png using Guid(e657ae44bbe46e449b99b66b1394e2c7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '12a829e5c43a73b0f2b124f068912fcb') in 0.0200784 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Throw_4.png
+  artifactKey: Guid(f142f729d2e3227479800516bf8e85d3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/1 Pink_Monster/Pink_Monster_Throw_4.png using Guid(f142f729d2e3227479800516bf8e85d3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bbd7916893a9aa9fc7ce66d1b3ec4a62') in 0.0200165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Throw_4.png
+  artifactKey: Guid(d2eea0c8e9ccb15499562755cdaaeeb0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/2 Owlet_Monster/Owlet_Monster_Throw_4.png using Guid(d2eea0c8e9ccb15499562755cdaaeeb0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '64fadf3169f25b8711cef10962f5b66f') in 0.0178391 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_7.asset
+  artifactKey: Guid(74452b10e4065d34581f7ccba4ebb42d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_7.asset using Guid(74452b10e4065d34581f7ccba4ebb42d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '790ef61ed6426582afd7ab97fb4a1d39') in 0.011093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_50.asset
+  artifactKey: Guid(6f82d2f2d923997428f9718dafebd0bb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_50.asset using Guid(6f82d2f2d923997428f9718dafebd0bb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c0e2ce8b2ef41cff253a679cd6e9ad59') in 0.0177608 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_35.asset
+  artifactKey: Guid(f3a7e4d5006e4254d8567b7805efa385) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_35.asset using Guid(f3a7e4d5006e4254d8567b7805efa385) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6fa0651dc9de2833d162a9d8ca69f9fe') in 0.014647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Materials/NoFriction.physicsMaterial2D
+  artifactKey: Guid(7b3b53871bc346044bc9d11925c5d7e2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Materials/NoFriction.physicsMaterial2D using Guid(7b3b53871bc346044bc9d11925c5d7e2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0811920c048d858e912fc3161703f0e9') in 0.0096612 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_1.asset
+  artifactKey: Guid(5dc03bc4b0f886f43a0ff773071ca950) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_1.asset using Guid(5dc03bc4b0f886f43a0ff773071ca950) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fad356173b57b3dc0c493760add5b720') in 0.0119602 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Graphics/Characters/2 Owlet_Monster/Rock2.png
+  artifactKey: Guid(edf1715c9b07bc44fb3f23fcb72e7c4b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/2 Owlet_Monster/Rock2.png using Guid(edf1715c9b07bc44fb3f23fcb72e7c4b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'edf29f1245827f92f3633c37fdf73ddd') in 0.015691 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_8.asset
+  artifactKey: Guid(3c644c5a5ce266b4797f3e0963b7ed29) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_8.asset using Guid(3c644c5a5ce266b4797f3e0963b7ed29) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '66d4a4f6282b996de315967027fe9c78') in 0.0103769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_67.asset
+  artifactKey: Guid(066a06006bdedfd42bc444e7c2d6b2ec) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_67.asset using Guid(066a06006bdedfd42bc444e7c2d6b2ec) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7863c970eaa9cccdcb525f3374c2259e') in 0.0140599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_40.asset
+  artifactKey: Guid(c5b6b53b4c6dcd946a538726111092fc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_40.asset using Guid(c5b6b53b4c6dcd946a538726111092fc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '539211a3bd6e79669fc661e852e14c3c') in 0.0091799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_58.asset
+  artifactKey: Guid(61cb497591582704280387cb8486a2b6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_58.asset using Guid(61cb497591582704280387cb8486a2b6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '40ca6191c3fc45b5711e313636c0f115') in 0.0177531 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_25.asset
+  artifactKey: Guid(ef15d1c2a0e718f4eb30582403496e2b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_25.asset using Guid(ef15d1c2a0e718f4eb30582403496e2b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd7f7d7175a6e6cf54273359f17c42ec2') in 0.0168405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Graphics/Characters/2 Owlet_Monster/Rock1.png
+  artifactKey: Guid(8097d85b7bb8c1b4bb1edf5dd0545218) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/2 Owlet_Monster/Rock1.png using Guid(8097d85b7bb8c1b4bb1edf5dd0545218) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ebe4becbd07bc18ebbf0c3a22adda5eb') in 0.0181663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_18.asset
+  artifactKey: Guid(4e7c5a817c7520640b61bc90d554ff02) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_18.asset using Guid(4e7c5a817c7520640b61bc90d554ff02) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '908e8d2d567e4058c2a4ec0cfb085cdf') in 0.0097508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_4.asset
+  artifactKey: Guid(c63e45495bcffd145a800e446877a92e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_4.asset using Guid(c63e45495bcffd145a800e446877a92e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ca09fc13829c89c82c11ed3db2fd0dc7') in 0.0095108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_20.asset
+  artifactKey: Guid(146101f5bd8cdee419b1ac56b4d6417a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_20.asset using Guid(146101f5bd8cdee419b1ac56b4d6417a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '44abc37e892f2fb03a6621747fd7df0b') in 0.0109124 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Animations/Characters/Bleeb/Run.anim
+  artifactKey: Guid(82ebf6dcd6ff0ff459d194676aea95f8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Animations/Characters/Bleeb/Run.anim using Guid(82ebf6dcd6ff0ff459d194676aea95f8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bf7e1e47d53750229f580945e9c44b94') in 0.0097161 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_63.asset
+  artifactKey: Guid(3aa9b0b312b41a14a88bcf19eeefeed6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_63.asset using Guid(3aa9b0b312b41a14a88bcf19eeefeed6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5224f4b023e60425ba28debc8e7629d1') in 0.0143903 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Double_Jump_Dust_5.png
+  artifactKey: Guid(91ca77c82013d5c4ea08cf06eb3f7d8e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Double_Jump_Dust_5.png using Guid(91ca77c82013d5c4ea08cf06eb3f7d8e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b0cc8fd3749ab439cde53696dd31a52a') in 0.0208383 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_12.asset
+  artifactKey: Guid(d2839446b15388c4797e2db0ec54b9bd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_12.asset using Guid(d2839446b15388c4797e2db0ec54b9bd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '49680229793503c294ebcc6f98a3d0c7') in 0.0146854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TilePalletes/Land/generic_platformer_tiles_20.asset
+  artifactKey: Guid(03c3abb632ab4424aa70982ffee0e8a3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/Land/generic_platformer_tiles_20.asset using Guid(03c3abb632ab4424aa70982ffee0e8a3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5e04146b79004dc35c8eca342d8c1bf1') in 0.0127661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/SeasonalTiles.prefab
+  artifactKey: Guid(4340d68c20bc01943aedfdf7cd3ce5a8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/SeasonalTiles.prefab using Guid(4340d68c20bc01943aedfdf7cd3ce5a8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '921a0d4500b636ab5dcd6b662192c5fa') in 0.0147043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TilePalletes/SeasonalTiles/Tiles_5.asset
+  artifactKey: Guid(9ce4880fe7e3a3544bb5f715bb398fe6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TilePalletes/SeasonalTiles/Tiles_5.asset using Guid(9ce4880fe7e3a3544bb5f715bb398fe6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3af8dd1317fd51d535265090c90cc213') in 0.0082508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.158364 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e853e8cd55e7d57448d99123784d5855') in 0.0087326 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 143.887502 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1b04b06385186c4007640cfaa539b4b5') in 0.0085895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.916498 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5a24929b8cf74a76e4e533d3ce466c2d') in 0.0106789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.482874 seconds.
+  path: Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster.png
+  artifactKey: Guid(aedbcdd9b88584749b88f8f853bf7854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Characters/3 Dude_Monster/Dude_Monster.png using Guid(aedbcdd9b88584749b88f8f853bf7854) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b080bb4be53c8f2c7d1b1d812cf3d5e7') in 0.0525343 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 294.024065 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6ef0006194fd61616920049430ea8e0c') in 0.0097718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.858695 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '496e4e978303f461bdde9e8f8d1cd137') in 0.0090351 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.028333 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2e6b893e8ea07bcc166af08ca2ef2f55') in 0.0115996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.986819 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '02fb75d01ce28c06bf20e6c40f5f25de') in 0.009519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.632064 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8cf3f11c01455284db348ddacfefccd3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ad8bc940d36284c94d63684f4c77a417') in 0.0087974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
