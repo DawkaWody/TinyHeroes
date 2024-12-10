@@ -29,6 +29,11 @@ sysinfo.txt
 .DS_Store
 
 ###
+# Irytujące okienko, że projekt jest stworzony w innej wersji unity
+###
+[Pp]roject[Ss]ettings/ProjectVersion.txt
+
+###
 # OS generated
 ###
 .DS_Store
