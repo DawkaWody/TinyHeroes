@@ -33,7 +33,8 @@ sysinfo.txt
 ###
 # Irytujące okienko, że projekt jest stworzony w innej wersji unity
 ###
-[Pp]roject[Ss]ettings/[Pp]roject[Vv]ersion.txt
+ProjectSettings/ProjectVersion.txt
+TinyHeroes/ProjectSettings/ProjectVersion.txt
 
 ###
 # OS generated
