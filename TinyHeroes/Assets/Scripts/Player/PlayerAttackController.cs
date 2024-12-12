@@ -42,4 +42,9 @@ public class PlayerAttackController : MonoBehaviour
             }
         }
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(_handPoint.position, _attackRange);
+    }
 }

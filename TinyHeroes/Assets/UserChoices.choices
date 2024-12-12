@@ -32,5 +32,5 @@ MonoBehaviour:
       - 4
   Preset: 11
   SelectedSolutions:
-    SelectedHostingModel: 4
+    SelectedHostingModel: 1
     SelectedNetcodeSolution: 1

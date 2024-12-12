@@ -25,7 +25,9 @@ public class Dust : MonoBehaviour
         if (_playedAnimation)
         {
             if (_animator.GetCurrentAnimatorStateInfo(0).IsName("None"))
+            {
                 Destroy(gameObject);
+            }
         }
     }
 

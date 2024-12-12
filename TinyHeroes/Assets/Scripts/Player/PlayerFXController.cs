@@ -5,7 +5,7 @@ public class PlayerFXController : MonoBehaviour
     [SerializeField] private GameObject _dustFxPrefab;
     
 
-    public void PlayDoubleJumpDust(Vector3 position)
+    public void PlayDoubleJumpDust(Vector2 position)
     {
         GameObject dustFx = Instantiate(_dustFxPrefab, position, Quaternion.identity);
         Dust dust = dustFx.GetComponent<Dust>();
@@ -13,7 +13,7 @@ public class PlayerFXController : MonoBehaviour
         dust.Play();
     }
 
-    public void PlayRunDust(Vector3 position)
+    public void PlayRunDust(Vector2 position)
     {
         GameObject dustFx = Instantiate(_dustFxPrefab, position, Quaternion.identity);
         Dust dust = dustFx.GetComponent<Dust>();

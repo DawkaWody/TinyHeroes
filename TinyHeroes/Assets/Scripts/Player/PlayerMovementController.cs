@@ -17,6 +17,7 @@ public class PlayerMovementController : MonoBehaviour
     // Movement variables
     [HideInInspector] public bool isFacingRight;
     private Vector2 _moveVelocity;
+    private bool _isRunning;
 
     // Jumping variables
     private float _verticalVeocity;
@@ -111,11 +112,18 @@ public class PlayerMovementController : MonoBehaviour
             {
                 targetVelocity = new Vector2(moveInput.x, 0f) * _movementStats.MaxRunSpeed;
                 _animationController.AnimateMovement(true, true);
+                if (!_isRunning)
+                {
+                    // Play dust fx
+                    _fxController.PlayRunDust(new Vector2(_feetColl.bounds.center.x, _feetColl.bounds.min.y));
+                    _isRunning = true;
+                }
             }
             else
             {
                 targetVelocity = new Vector2(moveInput.x, 0f) * _movementStats.MaxWalkSpeed;
                 _animationController.AnimateMovement(true, false);
+                _isRunning = false;
             }
 
             _moveVelocity = Vector2.Lerp(_moveVelocity, targetVelocity, acceleration * Time.fixedDeltaTime);
