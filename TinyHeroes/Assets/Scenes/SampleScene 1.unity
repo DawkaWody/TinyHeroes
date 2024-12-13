@@ -845,6 +845,8 @@ MonoBehaviour:
   - {fileID: 1338570076}
   - {fileID: 1210742197}
   - {fileID: 1966742239}
+  _player: {fileID: 1892244953}
+  _minimumSpawnDistance: 5
 --- !u!1 &736408334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,6 +2824,10 @@ PrefabInstance:
     - target: {fileID: 3804377486070029434, guid: 65b8e178ae73a1f42a3378d5162c7180, type: 3}
       propertyPath: m_Name
       value: Diamond
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202676939524789427, guid: 65b8e178ae73a1f42a3378d5162c7180, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
