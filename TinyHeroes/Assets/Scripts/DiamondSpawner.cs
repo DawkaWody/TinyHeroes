@@ -1,17 +1,24 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DiamondSpawner : MonoBehaviour
 {
     [SerializeField] private float _spawnRate;
-    [SerializeField] private GameObject[] _diamonds;
+    [SerializeField] private GameObject _diamondContainer;
     [SerializeField] private Transform _player;
     [SerializeField] private float _minimumSpawnDistance;
 
+    private List<GameObject> _diamonds;
+
     private float _spawnTimer;
 
-    void Start() {
-        foreach (GameObject d in _diamonds) {
-            d.SetActive(false);
+    void Start() 
+    {
+        _diamonds = new List<GameObject>();
+        foreach (Transform d in _diamondContainer.transform) 
+        {
+            _diamonds.Add(d.gameObject);
+            d.gameObject.SetActive(false);
         }
 
         _spawnTimer = _spawnRate;
@@ -27,15 +34,15 @@ public class DiamondSpawner : MonoBehaviour
     }
 
     private void SpawnDiamond() {
-        GameObject[] validDiamonds = GetDiamondsFarFromPlayer();
-        if (validDiamonds.Length > 0) {
-            GameObject diamondToSpawn = validDiamonds[Random.Range(0, validDiamonds.Length)];
+        List<GameObject> validDiamonds = GetDiamondsFarFromPlayer();
+        if (validDiamonds.Count > 0) {
+            GameObject diamondToSpawn = validDiamonds[Random.Range(0, validDiamonds.Count)];
             diamondToSpawn.SetActive(true);
         }
     }
 
-    private GameObject[] GetDiamondsFarFromPlayer() {
-        return System.Array.FindAll(_diamonds, d => { // lambda ;)
+    private List<GameObject> GetDiamondsFarFromPlayer() {
+        return _diamonds.FindAll(d => { // lambda ;)
             float distance = Vector3.Distance(d.transform.position, _player.position);
             return !d.activeSelf && distance >= _minimumSpawnDistance; // if inactive and far enough
         });

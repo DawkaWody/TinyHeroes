@@ -16,7 +16,7 @@ MonoBehaviour:
   MaxRunSpeed: 12.5
   GroundAcceleration: 5
   GroundDecceleration: 18
-  AirAcceleration: 7
+  AirAcceleration: 4
   AirDecceleration: 5
   JumpHeight: 4.5
   MaxFallSpeed: 26
