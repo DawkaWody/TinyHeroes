@@ -167,8 +167,8 @@ MonoBehaviour:
     y: 0
     width: 1009
     height: 421
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 500
+    y: 445
     width: 1008
     height: 486
   m_SerializedDataModeController:
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79
+    y: 24
     width: 1008
     height: 395
   m_SerializedDataModeController:
@@ -1350,8 +1350,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1009
-    y: 79
+    x: 1
+    y: 24
     width: 373
     height: 419
   m_SerializedDataModeController:
@@ -1368,8 +1368,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 24890100
-      m_LastClickedID: 100644
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 2ec2feff7cc7feff0689010024890100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1480,8 +1480,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1009
-    y: 524
+    x: 1
+    y: 469
     width: 373
     height: 462
   m_SerializedDataModeController:
@@ -1524,7 +1524,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 96570000
     m_LastClickedID: 22422
-    m_ExpandedIDs: ffffffffb04c01002c5a01007e68010066690100d66e0100227c0100b27d0100
+    m_ExpandedIDs: 000000009afb00009cfb00009efb0000a0fb0000a2fb0000a4fb0000a6fb0000a8fb0000aafb0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1553,21 +1553,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 184}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000b04c01002c5a0100786201007e68010066690100d66e01003c7a0100227c0100b27d0100
+    m_ExpandedIDs: 000000009afb00009cfb00009efb0000a0fb0000a2fb0000a4fb0000a6fb0000a8fb0000aafb0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: DiamondSpawner
-      m_OriginalName: DiamondSpawner
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 41932
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 11}
@@ -1632,8 +1632,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1384
-    y: 79
+    x: 1385
+    y: 24
     width: 535
     height: 907
   m_SerializedDataModeController:

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\dawka\\Repositories\\GitHub\\TinyHeroes\\TinyHeroes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FF8CD7A-1984-074B-4E07-EE0A4F7B1814}|Assembly-CSharp.csproj|c:\\users\\dawka\\repositories\\github\\tinyheroes\\tinyheroes\\assets\\scripts\\player\\playermovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF8CD7A-1984-074B-4E07-EE0A4F7B1814}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FF8CD7A-1984-074B-4E07-EE0A4F7B1814}|Assembly-CSharp.csproj|c:\\users\\dawka\\repositories\\github\\tinyheroes\\tinyheroes\\assets\\scripts\\diamondspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF8CD7A-1984-074B-4E07-EE0A4F7B1814}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\diamondspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -35,12 +39,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerMovementController.cs",
+              "DocumentMoniker": "C:\\Users\\dawka\\Repositories\\GitHub\\TinyHeroes\\TinyHeroes\\Assets\\Scripts\\Player\\PlayerMovementController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovementController.cs",
+              "ToolTip": "C:\\Users\\dawka\\Repositories\\GitHub\\TinyHeroes\\TinyHeroes\\Assets\\Scripts\\Player\\PlayerMovementController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovementController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwEcAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T19:36:09.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DiamondSpawner.cs",
               "DocumentMoniker": "C:\\Users\\dawka\\Repositories\\GitHub\\TinyHeroes\\TinyHeroes\\Assets\\Scripts\\DiamondSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DiamondSpawner.cs",
               "ToolTip": "C:\\Users\\dawka\\Repositories\\GitHub\\TinyHeroes\\TinyHeroes\\Assets\\Scripts\\DiamondSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\DiamondSpawner.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowA0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwC4AAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T19:27:05.129Z",
               "EditorCaption": ""
