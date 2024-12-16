@@ -6,8 +6,9 @@ public class CameraPlayerFollow : MonoBehaviour
     [SerializeField] private Transform _player;
     private float _flipYRotationTime = 0.5f;
 
-    private Coroutine _turnCoroutine;
+    private Coroutine _turnCo;
     private bool _isFacingRight;
+    private bool _isFlipping;
 
     private PlayerMovementController _playerMovement;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,11 +30,18 @@ public class CameraPlayerFollow : MonoBehaviour
 
     public void Turn()
     {
-        _turnCoroutine = StartCoroutine(FlipYLerp());
+        if (_isFlipping)
+        {
+            StopCoroutine(_turnCo);
+            ResetRotation();
+        }
+        _turnCo = StartCoroutine(FlipYLerp());
     }
 
     private IEnumerator FlipYLerp()
     {
+        _isFlipping = true;
+
         float startRotation = transform.localEulerAngles.y;
         float endRotation = EndRotation();
         float yRotation = 0f;
@@ -48,12 +56,19 @@ public class CameraPlayerFollow : MonoBehaviour
 
             yield return null;
         }
+
+        _isFlipping = false;
     }
 
     private float EndRotation()
     {
         _isFacingRight = !_isFacingRight;
         return (_isFacingRight) ? 180f : 0f;
+    }
+
+    private void ResetRotation()
+    {
+        transform.rotation = Quaternion.Euler(0f, EndRotation(), 0f);
     }
 
     #endregion
