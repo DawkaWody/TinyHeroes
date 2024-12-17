@@ -13,6 +13,7 @@ public class CameraResizer : MonoBehaviour
     private float _worldX;
     private Bounds _playerRect;
     private CinemachineCamera _camera;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +24,7 @@ public class CameraResizer : MonoBehaviour
     void LateUpdate()
     {
         UpdateBounds();
-        Debug.Log(_levelBounds);
+
         _camera.Lens.OrthographicSize = Mathf.Lerp(_minZoom, _maxZoom, _playerRect.size.x / _worldX);
     }
 
