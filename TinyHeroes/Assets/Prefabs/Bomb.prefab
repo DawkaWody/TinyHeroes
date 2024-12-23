@@ -172,6 +172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdown: 10
   transferCooldown: 0.5
+  offsetX: 0.2
+  offsetY: -0.1
 --- !u!114 &7168249178071552465
 MonoBehaviour:
   m_ObjectHideFlags: 0

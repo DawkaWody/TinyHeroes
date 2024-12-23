@@ -7,6 +7,9 @@ public class Bomb : MonoBehaviour
     private float timer;
     private float lastTransferTime = -Mathf.Infinity; // definitely not now
 
+    [SerializeField] private float offsetX;
+    [SerializeField] private float offsetY;
+
     private PlayerHandler currentPlayer;
     private BombTagManager bombTagManager;
 
@@ -32,7 +35,8 @@ public class Bomb : MonoBehaviour
         currentPlayer = player;
         currentPlayer.HasBomb = true;
 
-        transform.position = currentPlayer.transform.position;
+        Vector3 offset = new Vector3(offsetX, offsetY, 0f); // offset zby bomba nie byla na ryju
+        transform.position = currentPlayer.transform.position + offset;
         transform.SetParent(currentPlayer.transform);
 
         lastTransferTime = Time.time;
