@@ -5,7 +5,7 @@ public class PlayerHandler : MonoBehaviour
     public bool HasBomb = false;
 
     public void HandleExplosion() {
-        Debug.Log($"{gameObject.name} exploded!");
+        Debug.Log(gameObject.name + " exploded!");
 
         TriggerExplosionEffect();
 
@@ -14,6 +14,6 @@ public class PlayerHandler : MonoBehaviour
 
     // for visuals later
     private void TriggerExplosionEffect() {
-        Debug.Log($"Explosion effect triggered for {gameObject.name}");
+        Debug.Log("Explosion effect triggered for " + gameObject.name);
     }
 }

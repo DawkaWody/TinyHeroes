@@ -3,7 +3,10 @@ using UnityEngine;
 public class Bomb : MonoBehaviour
 {
     public float countdown = 10f;
+    [SerializeField] private float transferCooldown = 1f;
     private float timer;
+    private float lastTransferTime = -Mathf.Infinity; // definitely not now
+
     private PlayerHandler currentPlayer;
     private BombTagManager bombTagManager;
 
@@ -31,7 +34,8 @@ public class Bomb : MonoBehaviour
 
         transform.position = currentPlayer.transform.position;
         transform.SetParent(currentPlayer.transform);
-        timer = countdown;
+
+        lastTransferTime = Time.time;
     }
 
     private void Explode() 
@@ -50,14 +54,14 @@ public class Bomb : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) 
-    {
-        if (collision.CompareTag("Player")) {
-            PlayerHandler otherPlayer = collision.GetComponent<PlayerHandler>();
-            if (otherPlayer != null && otherPlayer != currentPlayer) { // npc nie spe³nia warunku otherPlayer != null, pozniej to naprawie
-                Debug.Log("Yes!");
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.CompareTag("Player"))
+        {
+            PlayerHandler otherPlayer = collision.GetComponentInParent<PlayerHandler>();
+            if (otherPlayer != null && otherPlayer != currentPlayer && Time.time >= lastTransferTime + transferCooldown)
+            {
                 AttachToPlayer(otherPlayer);
-            } 
+            }
         }
     }
 }
