@@ -3936,7 +3936,7 @@ MonoBehaviour:
   _playerCamera: {fileID: 1839488045}
   _canvas: {fileID: 1336342042}
   _arrowSprite: {fileID: -6833445872158455971, guid: 1c57da1fc398ddc449e00d6aa8d54199, type: 3}
-  _arrowSprite2: {fileID: -1016138424, guid: 1c57da1fc398ddc449e00d6aa8d54199, type: 3}
+  _borderSize: 80
 --- !u!1001 &2040667942
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,25 +12,18 @@ public class PlayerIndicatorsManager : MonoBehaviour
     [SerializeField] private CinemachineCamera _playerCamera;
     [SerializeField] private RectTransform _canvas;
     [SerializeField] private Sprite _arrowSprite;
-    [SerializeField] private Sprite _arrowSprite2;
-
-    private float _pointerSize;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        _pointerSize = _pointerTransform.rect.width;  
-    }
+    [SerializeField] private float _borderSize;
 
     // Update is called once per frame
     void Update()
     {
         Vector3 targetScreenPos = Camera.main.WorldToScreenPoint(_target.position);
-        bool offScreen = targetScreenPos.x <= _pointerSize || targetScreenPos.x >= Screen.width - _pointerSize || 
-            targetScreenPos.y <= _pointerSize || targetScreenPos.y >= Screen.height - _pointerSize;
+        bool offScreen = targetScreenPos.x <= _borderSize || targetScreenPos.x >= Screen.width - _borderSize || 
+            targetScreenPos.y <= _borderSize || targetScreenPos.y >= Screen.height - _borderSize;
 
         if (offScreen)
         {
+            _pointerImage.enabled = true;
             Vector3 fromPosition = _playerCamera.transform.position;
             Vector3 toPosition = _target.position;
 
@@ -42,20 +35,17 @@ public class PlayerIndicatorsManager : MonoBehaviour
 
             _pointerImage.sprite = _arrowSprite;
             Vector3 cappedTargetScreenPosition = targetScreenPos;
-            if (cappedTargetScreenPosition.x <= _pointerSize) cappedTargetScreenPosition.x = _pointerSize;
+            if (cappedTargetScreenPosition.x <= _borderSize) cappedTargetScreenPosition.x = _borderSize;
             if (cappedTargetScreenPosition.x >= Screen.width) cappedTargetScreenPosition.x = Screen.width;
-            if (cappedTargetScreenPosition.y <= _pointerSize) cappedTargetScreenPosition.x = _pointerSize;
+            if (cappedTargetScreenPosition.y <= _borderSize) cappedTargetScreenPosition.x = _borderSize;
             if (cappedTargetScreenPosition.y >= Screen.height) cappedTargetScreenPosition.x = Screen.height;
-            Debug.Log(cappedTargetScreenPosition);
             
             _pointerTransform.position = cappedTargetScreenPosition;
             _pointerTransform.localPosition = new Vector3(_pointerTransform.localPosition.x, _pointerTransform.localPosition.y, 0);
         }
         else
         {
-            _pointerImage.sprite = _arrowSprite2;
-            _pointerTransform.position = targetScreenPos;
-            _pointerTransform.localPosition = new Vector3(_pointerTransform.localPosition.x, _pointerTransform.localPosition.y, 0);
+            _pointerImage.enabled = false;
         }
     }
 }
