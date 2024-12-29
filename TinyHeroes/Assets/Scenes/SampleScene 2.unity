@@ -583,6 +583,7 @@ GameObject:
   - component: {fileID: 509840543}
   - component: {fileID: 509840545}
   - component: {fileID: 509840544}
+  - component: {fileID: 509840546}
   m_Layer: 5
   m_Name: PI1
   m_TagString: Untagged
@@ -629,7 +630,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6833445872158455971, guid: 1c57da1fc398ddc449e00d6aa8d54199, type: 3}
+  m_Sprite: {fileID: -765150924802650856, guid: fc3288b3d7f4126459eb9abb5943fa89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -647,6 +648,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509840542}
   m_CullTransparentMesh: 1
+--- !u!114 &509840546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509840542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdfa1b5379a18a942baa91635e56a35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: {fileID: 16341291}
+  _rotationOffset: -45
+  camera: {fileID: 0}
+  borderSize: 0
 --- !u!1001 &511264485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3930,13 +3947,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c95cbd9a6400b45a7ee727ab70a842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 16341291}
-  _pointerTransform: {fileID: 509840543}
-  _pointerImage: {fileID: 509840544}
-  _playerCamera: {fileID: 1839488045}
-  _canvas: {fileID: 1336342042}
-  _arrowSprite: {fileID: -6833445872158455971, guid: 1c57da1fc398ddc449e00d6aa8d54199, type: 3}
-  _borderSize: 80
+  _indicators:
+  - {fileID: 509840546}
+  _camera: {fileID: 519420031}
+  _borderSize: 30
 --- !u!1001 &2040667942
 PrefabInstance:
   m_ObjectHideFlags: 0
