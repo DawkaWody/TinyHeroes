@@ -3351,9 +3351,9 @@ MonoBehaviour:
   minZoom: 4.9
   maxZoom: 7.2
   zoomBuffer: 2
-  zoomSmoothing: 0.2
-  marginX: 0.2
-  marginY: 0.2
+  zoomSmoothing: 0.5
+  marginX: 0.3
+  marginY: 0.3
   eliminationCollider: {fileID: 1788978301}
   cameraTarget: {fileID: 833738809}
 --- !u!1 &1892244951
