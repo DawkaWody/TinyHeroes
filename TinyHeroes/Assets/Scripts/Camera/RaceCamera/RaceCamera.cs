@@ -12,6 +12,7 @@ public class RaceCamera : MonoBehaviour
     [SerializeField] private float zoomSmoothing = 0.2f;
     [SerializeField] private float marginX = 0.2f; // in percentage of screen
     [SerializeField] private float marginY = 0.2f; // in percentage of screen
+    [SerializeField] private float comebackZone = 1.5f;
     [SerializeField] private BoxCollider2D eliminationCollider; 
     [SerializeField] private Transform cameraTarget; 
 
@@ -51,7 +52,6 @@ public class RaceCamera : MonoBehaviour
         float currentZoom = _camera.Lens.OrthographicSize;
         _camera.Lens.OrthographicSize = Mathf.SmoothDamp(currentZoom, targetZoom, ref currentZoomVelocity, zoomSmoothing);
 
-        // change this to variables later
         float cameraHeight = _camera.Lens.OrthographicSize * 2f;
         float cameraWidth = cameraHeight * Screen.width / Screen.height;
 
@@ -120,7 +120,7 @@ public class RaceCamera : MonoBehaviour
         float cameraHeight = _camera.Lens.OrthographicSize * 2f;
         float cameraWidth = cameraHeight * Screen.width / Screen.height;
 
-        eliminationCollider.size = new Vector2(cameraWidth + 2f, cameraHeight + 2f); 
+        eliminationCollider.size = new Vector2(cameraWidth + comebackZone, cameraHeight + comebackZone); 
         eliminationCollider.transform.position = transform.position; 
     }
 }
