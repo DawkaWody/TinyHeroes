@@ -5,21 +5,33 @@ public class PlayerIndicator : MonoBehaviour
 {
     [SerializeField] private Transform _target;
     [SerializeField] private float _rotationOffset;
-    
-    [SerializeField] private RectTransform _arrowTransform;
-    [SerializeField] private Image _arrowImage;
 
-    [SerializeField] private RectTransform _circleTransform;
-    [SerializeField] private Image _circleImage;
-    [SerializeField] private Sprite _targetSprite;
+    [SerializeField] private GameObject _arrow;
+    [SerializeField] private GameObject _circle;
+    [SerializeField] private GameObject _sprite;
     
+    [HideInInspector] public Sprite targetSprite;
     [HideInInspector] public new Camera camera;
     [HideInInspector] public float borderSize;
 
+    private RectTransform _arrowTransform;
+    private RectTransform _circleTransform;
+    private RectTransform _spriteTransform;
+    private Image _arrowImage;
+    private Image _circleImage;
+    private Image _spriteImage;
     private float border;
 
     private void Start()
     {
+        _arrowTransform = _arrow.GetComponent<RectTransform>();
+        _circleTransform = _circle.GetComponent<RectTransform>();
+        _spriteTransform = _sprite.GetComponent<RectTransform>();
+        _arrowImage = _arrow.GetComponent<Image>();
+        _circleImage = _circle.GetComponent<Image>();
+        _spriteImage = _sprite.GetComponent<Image>();
+
+        _spriteImage.sprite = targetSprite;
         border = borderSize + _arrowTransform.rect.width;
     }
 
@@ -34,6 +46,7 @@ public class PlayerIndicator : MonoBehaviour
         {
             _arrowImage.enabled = true;
             _circleImage.enabled = true;
+            _spriteImage.enabled = true;
 
             Vector3 fromPosition = camera.transform.position;
             Vector3 toPosition = _target.position;
@@ -52,11 +65,13 @@ public class PlayerIndicator : MonoBehaviour
             _circleTransform.position = cappedTargetScreenPosition;
             _circleTransform.localPosition = new Vector3(_circleTransform.localPosition.x, _circleTransform.localPosition.y, 0);
             _arrowTransform.position = _circleTransform.position + direction * _circleTransform.rect.width;
+            _spriteTransform.position = _circleTransform.position;
         }
         else
         {
             _arrowImage.enabled = false;
             _circleImage.enabled = false;
+            _spriteImage.enabled = false;
         }
     }
 }
