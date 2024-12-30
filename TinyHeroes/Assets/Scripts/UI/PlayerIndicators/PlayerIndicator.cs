@@ -6,20 +6,21 @@ public class PlayerIndicator : MonoBehaviour
     [SerializeField] private Transform _target;
     [SerializeField] private float _rotationOffset;
     
+    [SerializeField] private RectTransform _arrowTransform;
+    [SerializeField] private Image _arrowImage;
+
+    [SerializeField] private RectTransform _circleTransform;
+    [SerializeField] private Image _circleImage;
+    [SerializeField] private Sprite _targetSprite;
+    
     [HideInInspector] public new Camera camera;
     [HideInInspector] public float borderSize;
 
     private float border;
 
-    private RectTransform _pointerTransform;
-    private Image _pointerImage;
-
     private void Start()
     {
-        _pointerTransform = GetComponent<RectTransform>();
-        _pointerImage = GetComponent<Image>();
-
-        border = borderSize + _pointerTransform.rect.width;
+        border = borderSize + _arrowTransform.rect.width;
     }
 
     // Update is called once per frame
@@ -31,7 +32,9 @@ public class PlayerIndicator : MonoBehaviour
 
         if (offScreen)
         {
-            _pointerImage.enabled = true;
+            _arrowImage.enabled = true;
+            _circleImage.enabled = true;
+
             Vector3 fromPosition = camera.transform.position;
             Vector3 toPosition = _target.position;
 
@@ -40,18 +43,20 @@ public class PlayerIndicator : MonoBehaviour
             if (angle < 0) angle += 360;
             angle += _rotationOffset;
 
-            _pointerTransform.localEulerAngles = new Vector3(0, 0, angle);
+            _arrowTransform.localEulerAngles = new Vector3(0, 0, angle);
 
             Vector3 cappedTargetScreenPosition = targetScreenPos;
             cappedTargetScreenPosition.x = Mathf.Clamp(cappedTargetScreenPosition.x, border, Screen.width - border);
             cappedTargetScreenPosition.y = Mathf.Clamp(cappedTargetScreenPosition.y, border, Screen.height - border);
 
-            _pointerTransform.position = cappedTargetScreenPosition;
-            _pointerTransform.localPosition = new Vector3(_pointerTransform.localPosition.x, _pointerTransform.localPosition.y, 0);
+            _circleTransform.position = cappedTargetScreenPosition;
+            _circleTransform.localPosition = new Vector3(_circleTransform.localPosition.x, _circleTransform.localPosition.y, 0);
+            _arrowTransform.position = _circleTransform.position + direction * _circleTransform.rect.width;
         }
         else
         {
-            _pointerImage.enabled = false;
+            _arrowImage.enabled = false;
+            _circleImage.enabled = false;
         }
     }
 }
