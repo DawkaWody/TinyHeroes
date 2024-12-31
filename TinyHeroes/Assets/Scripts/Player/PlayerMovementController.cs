@@ -52,6 +52,9 @@ public class PlayerMovementController : MonoBehaviour
     private PlayerInputHandler _inputHandler;
     private PlayerFXController _fxController;
 
+    // before start of the game
+    private bool canMove = true;
+
     #endregion
 
     private void Start()
@@ -66,6 +69,11 @@ public class PlayerMovementController : MonoBehaviour
 
     private void Update()
     {
+        if (!canMove) {
+            _animationController.AnimateMovement(false, false);
+            return;
+        }
+
         JumpChecks();
         UpdateTimers();
 
@@ -86,6 +94,11 @@ public class PlayerMovementController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!canMove) {
+            _rigidbody.linearVelocity = new Vector2(0f, _rigidbody.linearVelocity.y);
+            return;
+        }
+
         CollisionChecks();
         Jump();
 
@@ -380,4 +393,8 @@ public class PlayerMovementController : MonoBehaviour
             _inAirTimer += Time.deltaTime;
     }
 
+    public void EnableMovement(bool enable)
+    {
+        canMove = enable;
+    }
 }

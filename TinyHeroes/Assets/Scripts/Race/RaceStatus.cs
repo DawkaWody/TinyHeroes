@@ -6,6 +6,8 @@ public class RaceStatus : MonoBehaviour
     public bool hasFinished = false;
     public float raceTime = 0;
 
+    [SerializeField] private RaceManager raceManager;
+
     private void Update()
     {
         if (!hasFinished) {
@@ -15,8 +17,10 @@ public class RaceStatus : MonoBehaviour
 
     public void FinishRace()
     {
-        hasFinished = true;
-        Debug.Log(gameObject.name + " finished the race in " + raceTime.ToString("F3") + " seconds!"); //F3 zaokragla
-        // (maybe)more logic later for updating leaderboard or sth
+        if (!hasFinished) {
+            hasFinished = true;
+
+            raceManager.OnPlayerFinished();
+        }
     }
 }

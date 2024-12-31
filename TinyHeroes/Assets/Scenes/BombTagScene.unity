@@ -2073,6 +2073,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombPrefab: {fileID: 8004217818654903611, guid: f355a2806ce9f03439b0713db772821f, type: 3}
+  players:
+  - {fileID: 1892244962}
+  - {fileID: 16341292}
+  - {fileID: 557720753}
 --- !u!1 &1441185454
 GameObject:
   m_ObjectHideFlags: 0

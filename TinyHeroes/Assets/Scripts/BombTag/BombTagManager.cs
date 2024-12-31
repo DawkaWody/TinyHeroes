@@ -2,16 +2,17 @@ using UnityEngine;
 public class BombTagManager : MonoBehaviour
 {
     public GameObject bombPrefab;
-    private PlayerHandler[] players;
+    [SerializeField] private PlayerHandler[] players;
 
-    void Start() {
-        players = GameObject.FindObjectsByType<PlayerHandler>(FindObjectsSortMode.None);
+    void Start() 
+    {
         if (players.Length > 0) {
             AssignBombToRandomPlayer();
         }
     }
 
-    public int GetRemainingPlayersCount() {
+    public int GetRemainingPlayersCount() 
+    {
         int count = 0;
         foreach (PlayerHandler player in players) {
             if (player.gameObject.activeSelf) // check if player stiill active
@@ -41,6 +42,9 @@ public class BombTagManager : MonoBehaviour
         GameObject bomb = Instantiate(bombPrefab, randomPlayer.transform.position, Quaternion.identity);
         Bomb bombComponent = bomb.GetComponent<Bomb>();
 
-        bombComponent.AttachToPlayer(randomPlayer);
+        if (bombComponent != null) {
+            bombComponent.AttachToPlayer(randomPlayer);
+            bombComponent.SetBombTagManager(this);
+        }
     }
 }

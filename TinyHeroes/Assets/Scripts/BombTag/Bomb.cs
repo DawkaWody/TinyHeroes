@@ -15,7 +15,6 @@ public class Bomb : MonoBehaviour
 
     void Start() {
         timer = countdown;
-        bombTagManager = FindFirstObjectByType<BombTagManager>();
     }
 
     void Update() {
@@ -56,6 +55,11 @@ public class Bomb : MonoBehaviour
             Debug.Log("Game Over! Only one player left.");
             Destroy(gameObject);
         }
+    }
+
+    public void SetBombTagManager(BombTagManager manager)
+    {
+        bombTagManager = manager;
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
