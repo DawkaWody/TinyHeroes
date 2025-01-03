@@ -296,11 +296,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 16341289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557857cceff27340877cd9c4a1378cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 28751922dfd28af40a81f15aace419c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hasFinished: 0
-  raceTime: 0
   raceManager: {fileID: 1346582020}
 --- !u!1 &146989863
 GameObject:
@@ -1090,11 +1089,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 557720750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557857cceff27340877cd9c4a1378cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 28751922dfd28af40a81f15aace419c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hasFinished: 0
-  raceTime: 0
   raceManager: {fileID: 1346582020}
 --- !u!1 &607620273
 GameObject:
@@ -3262,7 +3260,6 @@ GameObject:
   - component: {fileID: 1399824284}
   - component: {fileID: 1399824286}
   - component: {fileID: 1399824285}
-  - component: {fileID: 1399824287}
   m_Layer: 0
   m_Name: FinishLine
   m_TagString: Untagged
@@ -3294,7 +3291,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1399824283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58d873bb4d33a1e40b28ff730ee38230, type: 3}
+  m_Script: {fileID: 11500000, guid: 3537ee9940d0ece43aca0632f39052b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1399824286
@@ -3343,21 +3340,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 6}
   m_EdgeRadius: 0
---- !u!114 &1399824287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399824283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557857cceff27340877cd9c4a1378cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasFinished: 0
-  raceTime: 0
-  raceManager: {fileID: 0}
 --- !u!1 &1428310339
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,7 +3842,7 @@ MonoBehaviour:
   minZoom: 4.9
   maxZoom: 7.2
   zoomBuffer: 2
-  zoomSmoothing: 0.2
+  zoomSmoothing: 0.1
   marginX: 0.4
   marginY: 0.4
   comebackZone: 2
@@ -4248,11 +4230,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1892244951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2557857cceff27340877cd9c4a1378cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 28751922dfd28af40a81f15aace419c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hasFinished: 0
-  raceTime: 0
   raceManager: {fileID: 1346582020}
 --- !u!1 &2112993237
 GameObject:
