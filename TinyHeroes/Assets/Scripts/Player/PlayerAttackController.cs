@@ -57,7 +57,7 @@ public class PlayerAttackController : MonoBehaviour
 
         if (targetMovementController != null) targetMovementController.enabled = false;
         Vector2 direction = (target.position - transform.position).normalized;
-        direction += Vector2.up * _knockbackStrength / 2;
+        direction += Vector2.up * _knockbackStrength / 3;
 
         targetRigidbody.AddForce(direction * _knockbackStrength, ForceMode2D.Impulse);
         _knockbackResetCo = StartCoroutine(ResetKnockback(targetRigidbody, targetMovementController));

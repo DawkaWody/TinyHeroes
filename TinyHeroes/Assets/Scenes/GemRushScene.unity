@@ -574,7 +574,7 @@ Transform:
   m_GameObject: {fileID: 255504197}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.18, y: 1.45, z: 0}
+  m_LocalPosition: {x: 3.82, y: 0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4107,6 +4107,8 @@ MonoBehaviour:
   _attackableLayers:
     serializedVersion: 2
     m_Bits: 0
+  _knockbackStrength: 4
+  _knockbackTime: 0.2
   _bodyColl: {fileID: 239672213}
 --- !u!114 &1892244962
 MonoBehaviour:
