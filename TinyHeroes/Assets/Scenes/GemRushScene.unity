@@ -1531,7 +1531,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnRate: 2
   _diamondContainer: {fileID: 1216345411}
-  _player: {fileID: 1892244953}
+  _players:
+  - {fileID: 1892244953}
+  - {fileID: 255504202}
   _minimumSpawnDistance: 3
   powerUpLayer:
     serializedVersion: 2
@@ -1866,7 +1868,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnRate: 5
   _powerUpContainer: {fileID: 1334429937}
-  _player: {fileID: 1892244953}
+  _players:
+  - {fileID: 1892244953}
+  - {fileID: 255504202}
   _minimumSpawnDistance: 3
   diamondLayer:
     serializedVersion: 2

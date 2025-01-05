@@ -1306,9 +1306,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33149f0c8ccb1c746b5ade8ea4398346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnRate: 2
+  _spawnRate: 3
   _diamondContainer: {fileID: 1216345411}
-  _player: {fileID: 1892244953}
+  _players:
+  - {fileID: 1892244953}
   _minimumSpawnDistance: 3
   powerUpLayer:
     serializedVersion: 2
@@ -1626,7 +1627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnRate: 5
   _powerUpContainer: {fileID: 1334429937}
-  _player: {fileID: 1892244953}
+  _players:
+  - {fileID: 1892244953}
   _minimumSpawnDistance: 3
   diamondLayer:
     serializedVersion: 2

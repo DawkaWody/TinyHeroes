@@ -6,7 +6,7 @@ public class PowerUpSpawner : MonoBehaviour
 {
     [SerializeField] private float _spawnRate;
     [SerializeField] private GameObject _powerUpContainer;
-    [SerializeField] private Transform _player;
+    [SerializeField] private List<Transform> _players;
     [SerializeField] private float _minimumSpawnDistance;
     [SerializeField] private LayerMask diamondLayer;
     [SerializeField] private GameObject[] _powerUpPrefabs;
@@ -41,10 +41,18 @@ public class PowerUpSpawner : MonoBehaviour
     {
         return _spawnPoints.FindAll(p =>
         {
-            float distance = Vector3.Distance(p.position, _player.position);
+            bool isFarFromPlayers = true;
+
+            foreach (Transform player in _players) {
+                float distance = Vector3.Distance(p.transform.position, player.position);
+                if (distance < _minimumSpawnDistance) {
+                    isFarFromPlayers = false;
+                    break;
+                }
+            }
             bool hasDiamond = Physics2D.OverlapCircle(p.position, 0.1f, diamondLayer) != null;
 
-            return distance >= _minimumSpawnDistance && _spawnPointManager.IsSpawnPointAvailable(p) && !hasDiamond;
+            return isFarFromPlayers && _spawnPointManager.IsSpawnPointAvailable(p) && !hasDiamond;
         });
     }
 

@@ -6,7 +6,7 @@ public class DiamondSpawner : MonoBehaviour
 {
     [SerializeField] private float _spawnRate;
     [SerializeField] private GameObject _diamondContainer;
-    [SerializeField] private Transform _player;
+    [SerializeField] private List<Transform> _players;
     [SerializeField] private float _minimumSpawnDistance;
     [SerializeField] private LayerMask powerUpLayer;
 
@@ -41,10 +41,18 @@ public class DiamondSpawner : MonoBehaviour
     {
         return _diamonds.FindAll(d =>
         {
-            float distance = Vector3.Distance(d.transform.position, _player.position);
+            bool isFarFromPlayers = true;
+
+            foreach (Transform player in _players) {
+                float distance = Vector3.Distance(d.transform.position, player.position);
+                if (distance < _minimumSpawnDistance) {
+                    isFarFromPlayers = false;
+                    break;
+                }
+            }
             bool hasPowerUp = Physics2D.OverlapCircle(d.transform.position, 0.1f, powerUpLayer) != null;
 
-            return !d.activeSelf && distance >= _minimumSpawnDistance && _spawnPointManager.IsSpawnPointAvailable(d.transform) && !hasPowerUp;
+            return !d.activeSelf && isFarFromPlayers && _spawnPointManager.IsSpawnPointAvailable(d.transform) && !hasPowerUp;
         });
     }
 
