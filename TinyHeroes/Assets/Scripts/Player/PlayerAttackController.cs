@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerAnimationController))]
@@ -9,9 +10,14 @@ public class PlayerAttackController : MonoBehaviour
     [SerializeField] private float _attackRange;
     [SerializeField] private LayerMask _attackableLayers;
 
+    [Header("Knockback Settings")]
+    [SerializeField] private float _knockbackStrength;
+    [SerializeField] private float _knockbackTime;
+
     [Header("Parts to Ingore")]
     [SerializeField] private Collider2D _bodyColl;
 
+    private Coroutine _knockbackResetCo;
     private PlayerAnimationController _animationController;
     private PlayerInputHandler _inputHandler;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,9 +44,30 @@ public class PlayerAttackController : MonoBehaviour
         {
             if (hit != _bodyColl)
             {
-                Debug.Log(hit);
+                ApplyKnockback(hit.transform);
             }
         }
+    }
+
+    private void ApplyKnockback(Transform target)
+    {
+        if (_knockbackResetCo != null) StopCoroutine(_knockbackResetCo);
+        Rigidbody2D targetRigidbody = target.GetComponentInParent<Rigidbody2D>();
+        PlayerMovementController targetMovementController = target.GetComponentInParent<PlayerMovementController>();
+
+        if (targetMovementController != null) targetMovementController.enabled = false;
+        Vector2 direction = (target.position - transform.position).normalized;
+        direction += Vector2.up * _knockbackStrength / 2;
+
+        targetRigidbody.AddForce(direction * _knockbackStrength, ForceMode2D.Impulse);
+        _knockbackResetCo = StartCoroutine(ResetKnockback(targetRigidbody, targetMovementController));
+    }
+
+    IEnumerator ResetKnockback(Rigidbody2D targetRigidbody, PlayerMovementController targetMovementController)
+    {
+        yield return new WaitForSeconds(_knockbackTime);
+        targetRigidbody.linearVelocity = Vector2.zero;
+        if (targetMovementController != null) targetMovementController.enabled = true;
     }
 
     private void OnDrawGizmos()
