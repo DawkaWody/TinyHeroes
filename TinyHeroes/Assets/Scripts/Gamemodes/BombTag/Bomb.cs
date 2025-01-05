@@ -27,12 +27,12 @@ public class Bomb : MonoBehaviour
 
     public void AttachToPlayer(PlayerHandler player) {
         if (currentPlayer != null) {
-            currentPlayer.HasBomb = false;
+            currentPlayer.hasBomb = false;
             transform.SetParent(null);
         }
 
         currentPlayer = player;
-        currentPlayer.HasBomb = true;
+        currentPlayer.hasBomb = true;
 
         Vector3 offset = new Vector3(offsetX, offsetY, 0f); // offset zby bomba nie byla na ryju
         transform.position = currentPlayer.transform.position + offset;

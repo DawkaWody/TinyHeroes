@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerHandler : MonoBehaviour
 {
-    public bool HasBomb = false;
+    public bool hasBomb = false;
+    public int diamonds = 0;
 
     public void HandleExplosion() {
         Debug.Log(gameObject.name + " exploded!");

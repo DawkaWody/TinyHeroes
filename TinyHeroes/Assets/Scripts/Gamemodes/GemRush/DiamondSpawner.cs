@@ -12,7 +12,7 @@ public class DiamondSpawner : MonoBehaviour
 
     private SpawnPointManager _spawnPointManager;
 
-    private List<GameObject> _diamonds = new List<GameObject>();
+    private List<GameObject> _diamonds = new();
 
     private float _spawnTimer;
 
