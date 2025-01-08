@@ -36,7 +36,7 @@ public class GemRushManager : MonoBehaviour
         for (int i = 0; i < scores.Count; i++)
         {
             PlayerHandler player = _players[i];
-            scores[i] = player.diamonds;
+            scores[player.GetComponent<PlayerData>().index] = player.diamonds;
         }
 
         int maxScore = scores.Max();
