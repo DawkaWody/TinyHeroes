@@ -14,6 +14,8 @@ public class PlayerAnimationController : MonoBehaviour
     [Header("Animator States")]
     [SerializeField] private string _jumpStateName = "Jump";
     [SerializeField] private string _inAirStateName = "InAir";
+    [SerializeField] private string _attack1StateName = "Attack1";
+    [SerializeField] private string _attack2StateName = "Attack2";
 
     private int _movingBoolId;
     private int _runningBoolId;
@@ -21,6 +23,9 @@ public class PlayerAnimationController : MonoBehaviour
     private int _jumpTriggerId;
     private int _attack1TriggerId;
     private int _attack2TriggerId;
+
+    private float _attack1ClipLength;
+    private float _attack2ClipLength;
 
     private Animator _animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,6 +39,14 @@ public class PlayerAnimationController : MonoBehaviour
         _jumpTriggerId = Animator.StringToHash(_jumpTriggerName);
         _attack1TriggerId = Animator.StringToHash(_attack1TriggerName);
         _attack2TriggerId = Animator.StringToHash(_attack2TriggerName);
+
+        foreach (AnimationClip c in _animator.runtimeAnimatorController.animationClips)
+        {
+            if (c.name == _attack1StateName)
+                _attack1ClipLength = c.length;
+            else if (c.name == _attack2StateName)
+                _attack2ClipLength = c.length;
+        }
     }
 
     public void AnimateMovement(bool isMoving, bool isRunning)
@@ -45,13 +58,9 @@ public class PlayerAnimationController : MonoBehaviour
     public void AnimateAttack(int variant)
     {
         if (variant == 1)
-        {
             _animator.SetTrigger(_attack1TriggerId);
-        }
         else if (variant == 2)
-        {
             _animator.SetTrigger(_attack2TriggerId);
-        }
     }
 
     public void InitiateJump()
@@ -62,6 +71,15 @@ public class PlayerAnimationController : MonoBehaviour
     public void Land()
     {
         _animator.SetTrigger(_landTriggerId);
+    }
+
+    public float AttackAnimationLength(int variant)
+    {
+        if (variant == 1)
+            return _attack1ClipLength;
+        else if (variant == 2)
+            return _attack2ClipLength;
+        return -1;
     }
 
     public bool IsInAirOrJumping()

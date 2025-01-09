@@ -3863,6 +3863,8 @@ MonoBehaviour:
   _attackableLayers:
     serializedVersion: 2
     m_Bits: 0
+  _knockbackStrength: 0
+  _knockbackTime: 0
   _bodyColl: {fileID: 239672213}
 --- !u!1001 &1966275895
 PrefabInstance:

@@ -17,6 +17,8 @@ public class PlayerAttackController : MonoBehaviour
     [Header("Parts to Ingore")]
     [SerializeField] private Collider2D _bodyColl;
 
+    private float _attackCooldown;
+
     private Coroutine _knockbackResetCo;
     private PlayerAnimationController _animationController;
     private PlayerInputHandler _inputHandler;
@@ -25,14 +27,20 @@ public class PlayerAttackController : MonoBehaviour
     {
         _animationController = GetComponent<PlayerAnimationController>();
         _inputHandler = GetComponent<PlayerInputHandler>();
+
+        _attackCooldown = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_inputHandler.Attack1WasPressed && !_animationController.IsInAirOrJumping())
+        if (_attackCooldown > 0)
+            _attackCooldown -= Time.deltaTime;
+
+        if (_inputHandler.Attack1WasPressed && !_animationController.IsInAirOrJumping() && _attackCooldown <= 0)
         {
             _animationController.AnimateAttack(1);
+            _attackCooldown = _animationController.AttackAnimationLength(1);
         }
     }
 
