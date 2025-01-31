@@ -22,6 +22,7 @@ public class GemRushManager : MonoBehaviour
 
         if (_gameTimer <= 0)
         {
+            Debug.Log("Game end");
             foreach (int playerIndex in GetWinners())
             {
                 Debug.Log("Player " + GLOBALS.playerColors[playerIndex] + " wins!");
