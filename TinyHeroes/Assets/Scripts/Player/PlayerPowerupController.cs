@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInputHandler))]
 public class PlayerPowerupController : MonoBehaviour
 {
-    private IPowerUp[] _powerups = new IPowerUp[2];
+    private IPowerUp[] _powerUps = new IPowerUp[2];
 
     private PlayerInputHandler _inputHandler;
 
@@ -19,29 +19,37 @@ public class PlayerPowerupController : MonoBehaviour
         if (_inputHandler.PowerUp1WasPressed)
         {
             UsePowerUp(0);
+            UiManager.Instance.HidePowerUp(GetComponent<PlayerData>().index, 1);
         }
         else if (_inputHandler.PowerUp2WasPressed)
         {
             UsePowerUp(1);
+            UiManager.Instance.HidePowerUp(GetComponent<PlayerData>().index, 2);
         }
     }
 
-    public void CollectPowerUp(IPowerUp powerup)
+    public int GetFirstAvailableSlot()
     {
-        for (int i = 0; i < _powerups.Length; i++)
+        for (int i = 0; i < _powerUps.Length; i++)
         {
-            if (_powerups[i] == null)
-            {
-                _powerups[i] = powerup;
-                break;
-            }
+            if (_powerUps[i] == null)
+                return i;
         }
+
+        return -1;
+    }
+
+    public void CollectPowerUp(IPowerUp powerUp)
+    {
+        int idx = GetFirstAvailableSlot();
+        if (idx == -1) return;
+        _powerUps[idx] = powerUp;
     }
 
     public void UsePowerUp(int slot)
     {
-        if (slot < 0 || slot >= _powerups.Length) return;
-        _powerups[slot]?.Use();
-        _powerups[slot] = null;
+        if (slot < 0 || slot >= _powerUps.Length) return;
+        _powerUps[slot]?.Use();
+        _powerUps[slot] = null;
     }
 }
