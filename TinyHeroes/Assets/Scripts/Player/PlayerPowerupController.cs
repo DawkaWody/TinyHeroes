@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInputHandler))]
 public class PlayerPowerupController : MonoBehaviour
 {
-    internal float speedMultiplier = 1f;
+    [HideInInspector] public float speedMultiplier = 1f;
 
     private IPowerUp[] _powerUps = new IPowerUp[2];
 
