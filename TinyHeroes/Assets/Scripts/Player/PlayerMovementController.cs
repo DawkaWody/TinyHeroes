@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerAnimationController))]
 [RequireComponent(typeof(PlayerInputHandler))]
 [RequireComponent(typeof(PlayerFXController))]
+[RequireComponent(typeof(PlayerPowerupController))]
 public class PlayerMovementController : MonoBehaviour
 {
     #region Variables
@@ -51,6 +52,7 @@ public class PlayerMovementController : MonoBehaviour
     private PlayerAnimationController _animationController;
     private PlayerInputHandler _inputHandler;
     private PlayerFXController _fxController;
+    private PlayerPowerupController _powerupController;
 
     // before start of the game
     private bool canMove = true;
@@ -63,6 +65,7 @@ public class PlayerMovementController : MonoBehaviour
         _animationController = GetComponent<PlayerAnimationController>();
         _inputHandler = GetComponent<PlayerInputHandler>();
         _fxController = GetComponent<PlayerFXController>();
+        _powerupController = GetComponent<PlayerPowerupController>();
 
         isFacingRight = true;
     }
@@ -123,7 +126,7 @@ public class PlayerMovementController : MonoBehaviour
             Vector2 targetVelocity = Vector2.zero;
             if (_inputHandler.RunIsHeld)
             {
-                targetVelocity = new Vector2(moveInput.x, 0f) * _movementStats.MaxRunSpeed;
+                targetVelocity = new Vector2(moveInput.x, 0f) * _movementStats.MaxRunSpeed * _powerupController.speedMultiplier;
                 _animationController.AnimateMovement(true, true);
                 if (!_isRunning)
                 {
@@ -134,7 +137,7 @@ public class PlayerMovementController : MonoBehaviour
             }
             else
             {
-                targetVelocity = new Vector2(moveInput.x, 0f) * _movementStats.MaxWalkSpeed;
+                targetVelocity = new Vector2(moveInput.x, 0f) * _movementStats.MaxWalkSpeed * _powerupController.speedMultiplier;
                 _animationController.AnimateMovement(true, false);
                 _isRunning = false;
             }

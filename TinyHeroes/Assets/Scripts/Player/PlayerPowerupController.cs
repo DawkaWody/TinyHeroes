@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInputHandler))]
 public class PlayerPowerupController : MonoBehaviour
 {
+    [HideInInspector] public float speedMultiplier = 1f;
+
     private IPowerUp[] _powerUps = new IPowerUp[2];
 
     private PlayerInputHandler _inputHandler;
@@ -49,7 +51,7 @@ public class PlayerPowerupController : MonoBehaviour
     public void UsePowerUp(int slot)
     {
         if (slot < 0 || slot >= _powerUps.Length) return;
-        _powerUps[slot]?.Use();
+        _powerUps[slot]?.Use(this);
         _powerUps[slot] = null;
     }
 }

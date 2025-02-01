@@ -1,4 +1,4 @@
 public interface IPowerUp
 {
-    void Use();
+    void Use(PlayerPowerupController player);
 }

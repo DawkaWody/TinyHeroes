@@ -25,7 +25,7 @@ public class PowerUpCollisionCheck : MonoBehaviour
             playerPowerupController.CollectPowerUp(gameObject.GetComponent<IPowerUp>());
 
             _spawnPointManager.SetSpawnPointAvailability(gameObject.transform, true);
-            Destroy(gameObject);
+            transform.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }
