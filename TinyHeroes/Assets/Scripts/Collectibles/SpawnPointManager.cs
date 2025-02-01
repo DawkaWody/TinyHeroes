@@ -18,9 +18,7 @@ public class SpawnPointManager : MonoBehaviour
 
     public void RegisterSpawnPoint(Transform spawnPoint)
     {
-        if (!_spawnPoints.ContainsKey(spawnPoint)) {
-            _spawnPoints[spawnPoint] = true;
-        }
+        _spawnPoints.TryAdd(spawnPoint, true);
     }
 
     public bool IsSpawnPointAvailable(Transform spawnPoint)

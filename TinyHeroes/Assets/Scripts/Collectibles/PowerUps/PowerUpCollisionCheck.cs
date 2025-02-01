@@ -13,12 +13,12 @@ public class PowerUpCollisionCheck : MonoBehaviour
         _powerUpManager = FindObjectOfType<PowerUpManager>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag(GLOBALS.playerTag)) 
+        if (other.gameObject.CompareTag(GLOBALS.playerTag))
         {
             Debug.Log("more yes");
-            _powerUpManager.CollectPowerUp(this, powerUpIcon);
+            _powerUpManager.CollectPowerUp(other.GetComponentInParent<PlayerPowerupController>(), this, powerUpIcon);
 
             _spawnPointManager.SetSpawnPointAvailability(gameObject.transform, true);
             Destroy(gameObject);

@@ -3986,6 +3986,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c2df39b2-8e81-4075-9e40-ea48ca64a11a
     m_ActionName: 'Player/Attack1[/Keyboard/w,/DualShock4GamepadHID/buttonWest]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 82ed8825-7347-4420-a0f9-1f9944a8b7b4
+    m_ActionName: 'Player/PowerUp1[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ebd402c1-ab70-4cd6-ba11-df6dbb2e5e3c
+    m_ActionName: 'Player/PowerUp2[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -4007,12 +4015,16 @@ MonoBehaviour:
   _jumpActionName: Jump
   _runActionName: Sprint
   _attack1ActionName: Attack1
+  _powerUp1ActionName: PowerUp1
+  _powerUp2ActionName: PowerUp2
   Movement: {x: 0, y: 0}
   JumpWasPressed: 0
   JumpIsHeld: 0
   JumpWasReleased: 0
   RunIsHeld: 0
   Attack1WasPressed: 0
+  PowerUp1WasPressed: 0
+  PowerUp2WasPressed: 0
 --- !u!114 &1892244957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4077,6 +4089,8 @@ MonoBehaviour:
   _attack2TriggerName: attack2
   _jumpStateName: Jump
   _inAirStateName: InAir
+  _attack1StateName: Attack1
+  _attack2StateName: Attack2
 --- !u!114 &1892244960
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3862,6 +3862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1892244953}
+  - component: {fileID: 1892244964}
   - component: {fileID: 1892244952}
   - component: {fileID: 1892244954}
   - component: {fileID: 1892244959}
@@ -3871,6 +3872,7 @@ GameObject:
   - component: {fileID: 1892244956}
   - component: {fileID: 1892244960}
   - component: {fileID: 1892244961}
+  - component: {fileID: 1892244963}
   - component: {fileID: 1892244962}
   m_Layer: 6
   m_Name: PLAYER
@@ -4090,6 +4092,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c2df39b2-8e81-4075-9e40-ea48ca64a11a
     m_ActionName: 'Player/Attack1[/Keyboard/w,/DualShock4GamepadHID/buttonWest]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 82ed8825-7347-4420-a0f9-1f9944a8b7b4
+    m_ActionName: 'Player/PowerUp1[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ebd402c1-ab70-4cd6-ba11-df6dbb2e5e3c
+    m_ActionName: 'Player/PowerUp2[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -4234,6 +4244,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasBomb: 0
   diamonds: 0
+--- !u!114 &1892244963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892244951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d201788304e9f0847aece73dae0b24df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1892244964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892244951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a751fec52544845b08d66fe5f4953c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1001 &1966275895
 PrefabInstance:
   m_ObjectHideFlags: 0
