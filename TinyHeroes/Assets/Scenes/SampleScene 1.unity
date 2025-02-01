@@ -1923,6 +1923,122 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3771531354582808071, guid: 65b8e178ae73a1f42a3378d5162c7180, type: 3}
   m_PrefabInstance: {fileID: 801867811}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &827786270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 827786275}
+  - component: {fileID: 827786274}
+  - component: {fileID: 827786273}
+  - component: {fileID: 827786272}
+  - component: {fileID: 827786271}
+  m_Layer: 0
+  m_Name: Test_Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &827786271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827786270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d201788304e9f0847aece73dae0b24df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &827786272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827786270}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4011f59f6d24f304dbfcf3481811f62f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveActionName: 
+  _jumpActionName: 
+  _runActionName: 
+  _attack1ActionName: 
+  _powerUp1ActionName: 
+  _powerUp2ActionName: 
+  Movement: {x: 0, y: 0}
+  JumpWasPressed: 0
+  JumpIsHeld: 0
+  JumpWasReleased: 0
+  RunIsHeld: 0
+  Attack1WasPressed: 0
+  PowerUp1WasPressed: 0
+  PowerUp2WasPressed: 0
+--- !u!114 &827786273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827786270}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 314b6f28eddbbd54ebcae8f7b6592c25, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &827786274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827786270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a751fec52544845b08d66fe5f4953c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+--- !u!4 &827786275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827786270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1645749, y: -3.1927376, z: -0.08083779}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &840900822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2227,6 +2343,7 @@ MonoBehaviour:
     m_Bits: 64
   _powerUpPrefabs:
   - {fileID: 4978174674202762537, guid: 893cbe779d18c7047a2df2d388dbdc6a, type: 3}
+  - {fileID: 4978174674202762537, guid: cf3523077037fe4418c4e882f3cf5f16, type: 3}
 --- !u!1 &965554072
 GameObject:
   m_ObjectHideFlags: 0
@@ -5029,7 +5146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d201788304e9f0847aece73dae0b24df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMultiplier: 1
 --- !u!114 &1892244964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5839,3 +5955,4 @@ SceneRoots:
   - {fileID: 527283938}
   - {fileID: 779112194}
   - {fileID: 965554075}
+  - {fileID: 827786275}

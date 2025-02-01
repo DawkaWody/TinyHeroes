@@ -3,11 +3,10 @@ using UnityEngine;
 
 public class SpeedBoost : MonoBehaviour, IPowerUp
 {
-    [SerializeField] private float _speedMultiplier = 2f;
-    [SerializeField] private float _duration = 5f;
+    [SerializeField] private float _speedMultiplier = 1.5f;
+    [SerializeField] private float _duration = 2f;
     public void Use(PlayerPowerupController player) 
     {
-        Debug.Log("used!"); // wiêcej debuglogow (;
         StartCoroutine(BoostSpeed(player));
     }
 
