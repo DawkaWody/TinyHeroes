@@ -15,7 +15,6 @@ public class PowerUpCollisionCheck : MonoBehaviour
     {
         if (other.gameObject.CompareTag(GLOBALS.playerTag))
         {
-            Debug.Log("more yes");
             PlayerPowerupController playerPowerupController = other.GetComponentInParent<PlayerPowerupController>();
             UiManager.Instance.ShowPowerUp(other.GetComponentInParent<PlayerData>().index,
                 playerPowerupController.GetFirstAvailableSlot() + 1, powerUpIcon);

@@ -71,7 +71,6 @@ public class UiManager : MonoBehaviour
         }
         else if (slot == 2)
         {
-            Debug.Log("saddsg");
             _powerUp2Icons[playerIndex].gameObject.SetActive(false);
         }
     }
