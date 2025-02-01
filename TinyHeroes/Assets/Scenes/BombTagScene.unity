@@ -221,7 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03bbedf3662a5f948805d921fc740902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HasBomb: 0
+  hasBomb: 0
+  diamonds: 0
 --- !u!70 &16341293
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -923,7 +924,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03bbedf3662a5f948805d921fc740902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HasBomb: 0
+  hasBomb: 0
+  diamonds: 0
 --- !u!70 &557720754
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2069,7 +2071,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1346582018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01fd9befde779d046a3d8ea84567118c, type: 3}
+  m_Script: {fileID: 11500000, guid: c03661b8a6115744382c12cb40ee5486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bombPrefab: {fileID: 8004217818654903611, guid: f355a2806ce9f03439b0713db772821f, type: 3}
@@ -2429,6 +2431,7 @@ GameObject:
   - component: {fileID: 1892244960}
   - component: {fileID: 1892244961}
   - component: {fileID: 1892244962}
+  - component: {fileID: 1892244963}
   m_Layer: 6
   m_Name: PLAYER
   m_TagString: Player
@@ -2668,12 +2671,16 @@ MonoBehaviour:
   _jumpActionName: Jump
   _runActionName: Sprint
   _attack1ActionName: Attack1
+  _powerUp1ActionName: PowerUp1
+  _powerUp2ActionName: PowerUp2
   Movement: {x: 0, y: 0}
   JumpWasPressed: 0
   JumpIsHeld: 0
   JumpWasReleased: 0
   RunIsHeld: 0
   Attack1WasPressed: 0
+  PowerUp1WasPressed: 0
+  PowerUp2WasPressed: 0
 --- !u!114 &1892244957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,6 +2745,8 @@ MonoBehaviour:
   _attack2TriggerName: attack2
   _jumpStateName: Jump
   _inAirStateName: InAir
+  _attack1StateName: Attack1
+  _attack2StateName: Attack2
 --- !u!114 &1892244960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2768,6 +2777,8 @@ MonoBehaviour:
   _attackableLayers:
     serializedVersion: 2
     m_Bits: 0
+  _knockbackStrength: 0
+  _knockbackTime: 0
   _bodyColl: {fileID: 239672213}
 --- !u!114 &1892244962
 MonoBehaviour:
@@ -2781,7 +2792,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03bbedf3662a5f948805d921fc740902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HasBomb: 0
+  hasBomb: 0
+  diamonds: 0
+--- !u!114 &1892244963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892244951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d201788304e9f0847aece73dae0b24df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedMultiplier: 1
 --- !u!1 &2112993237
 GameObject:
   m_ObjectHideFlags: 0

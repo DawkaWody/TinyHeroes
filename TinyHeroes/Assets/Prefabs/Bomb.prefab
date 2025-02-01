@@ -190,13 +190,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8004217818654903611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76f67d2f567bf184888ea373f66a1a0a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4093bf08ae0583c438a8e18933e5562e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: 10
   transferCooldown: 0.5
-  offsetX: 0.2
-  offsetY: -0.1
+  offsetX: 0
+  offsetY: 0
 --- !u!114 &7168249178071552465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,4 +209,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03bbedf3662a5f948805d921fc740902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HasBomb: 0
+  hasBomb: 0
+  diamonds: 0

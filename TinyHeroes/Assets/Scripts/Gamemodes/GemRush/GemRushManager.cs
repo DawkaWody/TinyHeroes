@@ -1,11 +1,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
 
 public class GemRushManager : MonoBehaviour
 {
     [SerializeField] private PlayerHandler[] _players;
     [SerializeField] private float _gameDuration;
+
+    //UI
+    [SerializeField] private TMP_Text timerText;
 
     private float _gameTimer;
 
@@ -28,6 +32,17 @@ public class GemRushManager : MonoBehaviour
                 Debug.Log("Player " + GLOBALS.playerColors[playerIndex] + " wins!");
             }    
         }
+        else 
+        {
+            UpdateTimerText();
+        }
+    }
+
+    void UpdateTimerText() 
+    {
+        int minutes = Mathf.FloorToInt(_gameTimer / 60);
+        int seconds = Mathf.FloorToInt(_gameTimer % 60);
+        timerText.text = minutes + ":" + seconds.ToString("D2");
     }
 
     List<int> GetWinners()
