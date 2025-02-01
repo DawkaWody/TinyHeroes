@@ -602,7 +602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239672212}
   - component: {fileID: 239672213}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: BodyColl
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -746,7 +746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 292250394}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1028,7 +1028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 480874286}
   - component: {fileID: 480874287}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: FeetColl
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3754,7 +3754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1441185455}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4593,7 +4593,7 @@ GameObject:
   - component: {fileID: 1892244961}
   - component: {fileID: 1892244963}
   - component: {fileID: 1892244962}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: PLAYER
   m_TagString: Player
   m_Icon: {fileID: 0}

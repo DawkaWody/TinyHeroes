@@ -6,15 +6,19 @@ public class PowerUpCollisionCheck : MonoBehaviour
     public Sprite powerUpIcon;
     private SpawnPointManager _spawnPointManager;
 
+    private bool _collected;
+
     void Start()
     {
         _spawnPointManager = SpawnPointManager.Instance;
+        _collected = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag(GLOBALS.playerTag))
+        if (other.gameObject.CompareTag(GLOBALS.playerTag) && !_collected)
         {
+            _collected = true;
             PlayerPowerupController playerPowerupController = other.GetComponentInParent<PlayerPowerupController>();
             UiManager.Instance.ShowPowerUp(other.GetComponentInParent<PlayerData>().index,
                 playerPowerupController.GetFirstAvailableSlot() + 1, powerUpIcon);
