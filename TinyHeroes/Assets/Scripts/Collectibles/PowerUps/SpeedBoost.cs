@@ -15,6 +15,7 @@ public class SpeedBoost : MonoBehaviour, IPowerUp
         player.speedMultiplier = _speedMultiplier;
         yield return new WaitForSeconds(_duration);
         player.speedMultiplier = 1f;
+
         Destroy(gameObject);
     }
 }

@@ -50,7 +50,8 @@ public class PlayerAttackController : MonoBehaviour
         Vector2 attackPoint = new Vector2(_handPoint.position.x, _handPoint.position.y);
         foreach (Collider2D hit in Physics2D.OverlapCircleAll(attackPoint, _attackRange))
         {
-            if (hit.CompareTag(GLOBALS.playerTag) && hit != _bodyColl)
+            if (hit.CompareTag(GLOBALS.playerTag) && hit != _bodyColl 
+                                                  && !hit.GetComponentInParent<PlayerPowerupController>().isInvincible)
             {
                 ApplyKnockback(hit.transform);
             }

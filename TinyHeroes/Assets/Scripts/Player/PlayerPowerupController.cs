@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerPowerupController : MonoBehaviour
 {
     [HideInInspector] public float speedMultiplier = 1f;
+    [HideInInspector] public bool isInvincible = false;
 
     private IPowerUp[] _powerUps = new IPowerUp[2];
 
