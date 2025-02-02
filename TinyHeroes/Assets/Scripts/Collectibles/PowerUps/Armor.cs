@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Armor : MonoBehaviour, IPowerUp
 {
-    [SerializeField] private float _duration;
+    [SerializeField] private float _duration = 1.5f;
     
     public void Use(PlayerPowerupController player)
     {

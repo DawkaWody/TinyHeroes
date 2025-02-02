@@ -3,13 +3,15 @@ using UnityEngine;
 public class PowerUpCollisionCheck : MonoBehaviour
 {
     public string powerUpName;
-    public Sprite powerUpIcon;
+
+    private Sprite _powerUpIcon;
     private SpawnPointManager _spawnPointManager;
 
     private bool _collected;
 
     void Start()
     {
+        _powerUpIcon = GetComponent<SpriteRenderer>().sprite;
         _spawnPointManager = SpawnPointManager.Instance;
         _collected = false;
     }
@@ -21,7 +23,7 @@ public class PowerUpCollisionCheck : MonoBehaviour
             _collected = true;
             PlayerPowerupController playerPowerupController = other.GetComponentInParent<PlayerPowerupController>();
             UiManager.Instance.ShowPowerUp(other.GetComponentInParent<PlayerData>().index,
-                playerPowerupController.GetFirstAvailableSlot() + 1, powerUpIcon);
+                playerPowerupController.GetFirstAvailableSlot() + 1, _powerUpIcon);
             playerPowerupController.CollectPowerUp(gameObject.GetComponent<IPowerUp>());
 
             _spawnPointManager.SetSpawnPointAvailability(gameObject.transform, true);
