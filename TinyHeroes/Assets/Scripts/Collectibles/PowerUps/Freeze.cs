@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Freeze : MonoBehaviour, IPowerUp
 {
-    [SerializeField] private float _duration = 0.9f;
+    [SerializeField] private float _duration = 1.2f;
     public void Use(PlayerPowerupController player)
     {
         StartCoroutine(FreezeOtherPlayers(player));
@@ -11,11 +11,13 @@ public class Freeze : MonoBehaviour, IPowerUp
 
     private IEnumerator FreezeOtherPlayers(PlayerPowerupController player)
     {
+        int playerIndex = player.GetComponent<PlayerData>().index;
+
         foreach (GameObject pl in GameObject.FindGameObjectsWithTag(GLOBALS.playerTag))
         {
             PlayerPowerupController target = pl.transform.GetComponent<PlayerPowerupController>();
-            if (pl != player.gameObject && target)
-                player.speedMultiplier = 0f;
+            if (target && playerIndex != pl.GetComponent<PlayerData>().index)
+                target.speedMultiplier = 0f;
         }
 
         yield return new WaitForSeconds(_duration);
@@ -23,8 +25,8 @@ public class Freeze : MonoBehaviour, IPowerUp
         foreach (GameObject pl in GameObject.FindGameObjectsWithTag(GLOBALS.playerTag))
         {
             PlayerPowerupController target = pl.transform.GetComponent<PlayerPowerupController>();
-            if (pl != player.gameObject && target)
-                player.speedMultiplier = 1f;
+            if (target && playerIndex != pl.GetComponent<PlayerData>().index)
+                target.speedMultiplier = 1f;
         }
 
         Destroy(gameObject);
