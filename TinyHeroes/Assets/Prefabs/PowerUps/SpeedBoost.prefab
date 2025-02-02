@@ -154,4 +154,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedMultiplier: 1.5
-  _duration: 2
+  _duration: 3
