@@ -1,19 +1,23 @@
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerInputHandler))]
+[RequireComponent(typeof(PlayerData))]
 public class PlayerPowerupController : MonoBehaviour
 {
     [HideInInspector] public float speedMultiplier = 1f;
     [HideInInspector] public bool isInvincible = false;
+    [HideInInspector] public bool blockOffensive = false;
 
     private IPowerUp[] _powerUps = new IPowerUp[2];
 
     private PlayerInputHandler _inputHandler;
+    private PlayerData _playerData;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _inputHandler = GetComponent<PlayerInputHandler>();
+        _playerData = GetComponent<PlayerData>();
     }
 
     // Update is called once per frame
@@ -22,12 +26,12 @@ public class PlayerPowerupController : MonoBehaviour
         if (_inputHandler.PowerUp1WasPressed)
         {
             UsePowerUp(0);
-            UiManager.Instance.HidePowerUp(GetComponent<PlayerData>().index, 1);
+            UiManager.Instance.HidePowerUp(_playerData.index, 1);
         }
         else if (_inputHandler.PowerUp2WasPressed)
         {
             UsePowerUp(1);
-            UiManager.Instance.HidePowerUp(GetComponent<PlayerData>().index, 2);
+            UiManager.Instance.HidePowerUp(_playerData.index, 2);
         }
     }
 

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Freeze : MonoBehaviour, IPowerUp
@@ -12,21 +13,22 @@ public class Freeze : MonoBehaviour, IPowerUp
     private IEnumerator FreezeOtherPlayers(PlayerPowerupController player)
     {
         int playerIndex = player.GetComponent<PlayerData>().index;
+        List<GameObject> frozenPlayers = new();
 
         foreach (GameObject pl in GameObject.FindGameObjectsWithTag(GLOBALS.playerTag))
         {
             PlayerPowerupController target = pl.transform.GetComponent<PlayerPowerupController>();
-            if (target && playerIndex != pl.GetComponent<PlayerData>().index)
-                target.speedMultiplier = 0f;
+            if (!target || target.blockOffensive || playerIndex == pl.GetComponent<PlayerData>().index) continue;
+            
+            target.speedMultiplier = 0f;
+            frozenPlayers.Add(pl);
         }
 
         yield return new WaitForSeconds(_duration);
 
-        foreach (GameObject pl in GameObject.FindGameObjectsWithTag(GLOBALS.playerTag))
+        foreach (GameObject pl in frozenPlayers)
         {
-            PlayerPowerupController target = pl.transform.GetComponent<PlayerPowerupController>();
-            if (target && playerIndex != pl.GetComponent<PlayerData>().index)
-                target.speedMultiplier = 1f;
+            pl.transform.GetComponent<PlayerPowerupController>().speedMultiplier = 1f;
         }
 
         Destroy(gameObject);

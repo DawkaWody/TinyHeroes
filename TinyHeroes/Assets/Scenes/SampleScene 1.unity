@@ -1957,6 +1957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedMultiplier: 1
   isInvincible: 0
+  blockOffensive: 0
 --- !u!114 &827786272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5151,6 +5152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedMultiplier: 1
   isInvincible: 0
+  blockOffensive: 0
 --- !u!114 &1892244964
 MonoBehaviour:
   m_ObjectHideFlags: 0
