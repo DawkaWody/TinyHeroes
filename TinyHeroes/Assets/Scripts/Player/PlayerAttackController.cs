@@ -3,6 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(PlayerAnimationController))]
 [RequireComponent(typeof(PlayerInputHandler))]
+[RequireComponent(typeof(PlayerPowerupController))]
 public class PlayerAttackController : MonoBehaviour
 {
     [Header("Attack Settings")]
@@ -22,11 +23,13 @@ public class PlayerAttackController : MonoBehaviour
     private Coroutine _knockbackResetCo;
     private PlayerAnimationController _animationController;
     private PlayerInputHandler _inputHandler;
+    private PlayerPowerupController _powerupController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _animationController = GetComponent<PlayerAnimationController>();
         _inputHandler = GetComponent<PlayerInputHandler>();
+        _powerupController = GetComponent<PlayerPowerupController>();
 
         _attackCooldown = 0;
     }
@@ -48,7 +51,8 @@ public class PlayerAttackController : MonoBehaviour
     public void Attack1()
     {
         Vector2 attackPoint = new Vector2(_handPoint.position.x, _handPoint.position.y);
-        foreach (Collider2D hit in Physics2D.OverlapCircleAll(attackPoint, _attackRange))
+        foreach (Collider2D hit in Physics2D.OverlapCircleAll(attackPoint, 
+                     _attackRange * _powerupController.attackRangeMultiplier))
         {
             if (hit.CompareTag(GLOBALS.playerTag) && hit != _bodyColl 
                                                   && !hit.GetComponentInParent<PlayerPowerupController>().isInvincible)
