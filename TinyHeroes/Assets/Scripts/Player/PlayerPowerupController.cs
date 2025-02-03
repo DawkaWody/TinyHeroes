@@ -8,6 +8,7 @@ public class PlayerPowerupController : MonoBehaviour
     [HideInInspector] public float jumpMultiplier = 1f;
     [HideInInspector] public bool isInvincible = false;
     [HideInInspector] public bool blockOffensive = false;
+    [HideInInspector] public bool invertControls = false;
 
     private IPowerUp[] _powerUps = new IPowerUp[2];
 
@@ -24,6 +25,9 @@ public class PlayerPowerupController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (invertControls)
+            _inputHandler.Movement *= -1;
+
         if (_inputHandler.PowerUp1WasPressed)
         {
             UsePowerUp(0);

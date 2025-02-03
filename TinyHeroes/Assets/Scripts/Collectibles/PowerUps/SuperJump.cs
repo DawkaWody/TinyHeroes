@@ -16,5 +16,7 @@ public class SuperJump : MonoBehaviour, IPowerUp
         player.jumpMultiplier = _jumpMultiplier;
         yield return new WaitForSeconds(_duration);
         player.jumpMultiplier = 1f;
+
+        Destroy(gameObject);
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Freeze : MonoBehaviour, IPowerUp
 {
     [SerializeField] private float _duration = 1.2f;
+
     public void Use(PlayerPowerupController player)
     {
         StartCoroutine(FreezeOtherPlayers(player));
