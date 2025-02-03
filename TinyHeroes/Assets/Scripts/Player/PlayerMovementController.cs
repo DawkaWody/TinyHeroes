@@ -261,7 +261,7 @@ public class PlayerMovementController : MonoBehaviour
 
         _jumpBufferTimer = 0f;
         _numberOfJumpsUsed += numberOfJumps;
-        _verticalVeocity = _movementStats.InitialJumpVelocity;
+        _verticalVeocity = _movementStats.InitialJumpVelocity * _powerupController.jumpMultiplier;
 
         if (numberOfJumps >= 2)
             _fxController.PlayDoubleJumpDust(new Vector2(_feetColl.bounds.center.x, _feetColl.bounds.min.y));
@@ -277,7 +277,8 @@ public class PlayerMovementController : MonoBehaviour
             
             if (_verticalVeocity >= 0f)
             {
-                _apexPoint = Mathf.InverseLerp(_movementStats.InitialJumpVelocity, 0f, _verticalVeocity);
+                _apexPoint = Mathf.InverseLerp(_movementStats.InitialJumpVelocity * _powerupController.jumpMultiplier, 
+                    0f, _verticalVeocity);
 
                 if (_apexPoint > _movementStats.ApexThreshold)
                 {

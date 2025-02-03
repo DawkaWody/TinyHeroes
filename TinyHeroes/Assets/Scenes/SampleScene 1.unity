@@ -1956,6 +1956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMultiplier: 1
+  jumpMultiplier: 1
   isInvincible: 0
   blockOffensive: 0
 --- !u!114 &827786272
@@ -2348,6 +2349,7 @@ MonoBehaviour:
   - {fileID: 4978174674202762537, guid: 893cbe779d18c7047a2df2d388dbdc6a, type: 3}
   - {fileID: 4978174674202762537, guid: cf3523077037fe4418c4e882f3cf5f16, type: 3}
   - {fileID: 3007072733715904053, guid: a273f0b8756a9514e9c104a5220d5fb6, type: 3}
+  - {fileID: 1221734994484593530, guid: 2e6e73361613d664b87c2b3c08289776, type: 3}
 --- !u!1 &965554072
 GameObject:
   m_ObjectHideFlags: 0
@@ -5151,6 +5153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMultiplier: 1
+  jumpMultiplier: 1
   isInvincible: 0
   blockOffensive: 0
 --- !u!114 &1892244964

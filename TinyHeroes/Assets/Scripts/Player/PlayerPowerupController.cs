@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerPowerupController : MonoBehaviour
 {
     [HideInInspector] public float speedMultiplier = 1f;
+    [HideInInspector] public float jumpMultiplier = 1f;
     [HideInInspector] public bool isInvincible = false;
     [HideInInspector] public bool blockOffensive = false;
 
