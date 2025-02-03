@@ -2216,7 +2216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _players:
   - {fileID: 1892244962}
-  _gameDuration: 10
+  _gameDuration: 60
   timerText: {fileID: 2030868047}
 --- !u!1 &899296033
 GameObject:
