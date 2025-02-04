@@ -11,10 +11,22 @@ public class KotpPlatform : MonoBehaviour
     private float _standingTimer;
     private bool _capturing;
 
+
+    private Animator _flagAnimator;
+
+    private static readonly int PinkFlagTrigger = Animator.StringToHash("PinkFlag");
+    private static readonly int BlueFlagTrigger = Animator.StringToHash("BlueFlag");
+    private static readonly int WhiteFlagTrigger = Animator.StringToHash("WhiteFlag");
+    private static readonly int DefaultFlagTrigger = Animator.StringToHash("DefaultFlag");
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _playersOn = new List<int>();
+
+        _flagAnimator = GetComponentInChildren<Animator>();
+
+        _flagAnimator.SetTrigger(DefaultFlagTrigger);
     }
 
     // Update is called once per frame
@@ -33,12 +45,19 @@ public class KotpPlatform : MonoBehaviour
             {
                 color = GLOBALS.playerColors[_playersOn[0]];
 
-                if (color.Equals("pink"))
+                if (color.Equals("pink")) {
+                    _flagAnimator.SetTrigger(PinkFlagTrigger);
                     Debug.Log("pink");
-                else if (color.Equals("blue"))
+                }
+                else if (color.Equals("blue")) {
+                    _flagAnimator.SetTrigger(BlueFlagTrigger);
                     Debug.Log("blue");
-                else if (color.Equals("white"))
+                }
+                    
+                else if (color.Equals("white")) {
+                    _flagAnimator.SetTrigger(WhiteFlagTrigger);
                     Debug.Log("white");
+                }
             }
         }
         else

@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: a37d09f7e3bd43b4f844c4d14bc121bc
+guid: 8b7ee959f1c2f244f8819c780a45cf4a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1182595891133082598
-    second: WhiteFlagIdle_0
+      213: -6885485985805745078
+    second: BlueFlagIdle_0
   - first:
-      213: 8803694262724710265
-    second: WhiteFlagIdle_1
+      213: -804772701159820614
+    second: BlueFlagIdle_1
   - first:
-      213: -3604706542097646627
-    second: WhiteFlagIdle_2
+      213: -4211599178679092481
+    second: BlueFlagIdle_2
   - first:
-      213: 9120386727531238900
-    second: WhiteFlagIdle_3
+      213: -5535079885530159302
+    second: BlueFlagIdle_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WhiteFlagIdle_0
+      name: BlueFlagIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ebe2d382bc696010800000000000000
-      internalID: 1182595891133082598
+      spriteID: a444e1e0af6d170a0800000000000000
+      internalID: -6885485985805745078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WhiteFlagIdle_1
+      name: BlueFlagIdle_1
       rect:
         serializedVersion: 2
         x: 32
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97fc9d8b9410d2a70800000000000000
-      internalID: 8803694262724710265
+      spriteID: ab2ff6efd7fd4d4f0800000000000000
+      internalID: -804772701159820614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WhiteFlagIdle_2
+      name: BlueFlagIdle_2
       rect:
         serializedVersion: 2
         x: 64
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ddb3ebe9f7289fdc0800000000000000
-      internalID: -3604706542097646627
+      spriteID: ffa718a6cd46d85c0800000000000000
+      internalID: -4211599178679092481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WhiteFlagIdle_3
+      name: BlueFlagIdle_3
       rect:
         serializedVersion: 2
         x: 96
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f5dfa4286f129e70800000000000000
-      internalID: 9120386727531238900
+      spriteID: a37a0939b227f23b0800000000000000
+      internalID: -5535079885530159302
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 95200d42d2db15b4abe645b623ebac8a
+    spriteID: 1060f6039f450d64eb1aa22e98843434
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WhiteFlagIdle_0: 1182595891133082598
-      WhiteFlagIdle_1: 8803694262724710265
-      WhiteFlagIdle_2: -3604706542097646627
-      WhiteFlagIdle_3: 9120386727531238900
+      BlueFlagIdle_0: -6885485985805745078
+      BlueFlagIdle_1: -804772701159820614
+      BlueFlagIdle_2: -4211599178679092481
+      BlueFlagIdle_3: -5535079885530159302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
