@@ -1,12 +1,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
 
 public class KotpManager : MonoBehaviour
 {
     [SerializeField] private KotpPlatform[] _platforms;
     [SerializeField] private float _captureTime;
     [SerializeField] private float _gameTime;
+
+    //UI
+    [SerializeField] private TMP_Text timerText;
 
     private float _gameTimer;
     private bool _isPlaying;
@@ -38,7 +42,18 @@ public class KotpManager : MonoBehaviour
 
                 _isPlaying = false;
             }
+            else 
+            {
+                UpdateTimerText();
+            }
         }
+    }
+
+    void UpdateTimerText() 
+    {
+        int minutes = Mathf.FloorToInt(_gameTimer / 60);
+        int seconds = Mathf.FloorToInt(_gameTimer % 60);
+        timerText.text = minutes + ":" + seconds.ToString("D2");
     }
 
     void EnableAllPlatforms()
