@@ -11,14 +11,23 @@ public class PlayerAttackController : MonoBehaviour
     [SerializeField] private float _attackRange;
     [SerializeField] private LayerMask _attackableLayers;
 
+    [Header("Combo Settings")] 
+    [SerializeField] private float _comboTime;
+    [SerializeField] private float _attackSpeedMultiplier;
+    [SerializeField] private int _maxCombo;
+
     [Header("Knockback Settings")]
     [SerializeField] private float _knockbackStrength;
     [SerializeField] private float _knockbackTime;
 
     [Header("Parts to Ignore")]
     [SerializeField] private Collider2D _bodyColl;
+    [SerializeField] private Collider2D _feetColl;
 
     private float _attackCooldown;
+    private float _comboTimer;
+    private int _comboStage;
+    private float _attackSpeed;
 
     private Coroutine _knockbackResetCo;
     private PlayerAnimationController _animationController;
@@ -32,6 +41,9 @@ public class PlayerAttackController : MonoBehaviour
         _powerupController = GetComponent<PlayerPowerupController>();
 
         _attackCooldown = 0;
+        _comboTimer = 0;
+        _comboStage = 0;
+        _attackSpeed = 1f;
     }
 
     // Update is called once per frame
@@ -39,11 +51,21 @@ public class PlayerAttackController : MonoBehaviour
     {
         if (_attackCooldown > 0)
             _attackCooldown -= Time.deltaTime;
+        if (_comboTimer > 0)
+            _comboTimer -= Time.deltaTime;
+
+        if (_comboTimer <= 0)
+        {
+            _comboStage = 0;
+            _attackSpeed = 1f;
+            _animationController.SetAttackSpeed(_attackSpeed);
+            _comboTimer = 0;
+        }
 
         if (_inputHandler.Attack1WasPressed && !_animationController.IsInAirOrJumping() && _attackCooldown <= 0)
         {
             _animationController.AnimateAttack(1);
-            _attackCooldown = _animationController.AttackAnimationLength(1);
+            _attackCooldown = _animationController.AttackAnimationLength(1) / _attackSpeed;
         }
     }
 
@@ -54,10 +76,11 @@ public class PlayerAttackController : MonoBehaviour
         foreach (Collider2D hit in Physics2D.OverlapCircleAll(attackPoint, 
                      _attackRange * _powerupController.attackRangeMultiplier))
         {
-            if (hit.CompareTag(GLOBALS.playerTag) && hit != _bodyColl 
-                                                  && !hit.GetComponentInParent<PlayerPowerupController>().isInvincible)
+            if (hit.CompareTag(GLOBALS.playerTag) && hit != _bodyColl && hit != _feetColl 
+                && !hit.GetComponentInParent<PlayerPowerupController>().isInvincible)
             {
                 ApplyKnockback(hit.transform);
+                IncreaseCombo();
             }
         }
     }
@@ -76,11 +99,22 @@ public class PlayerAttackController : MonoBehaviour
         _knockbackResetCo = StartCoroutine(ResetKnockback(targetRigidbody, targetMovementController));
     }
 
-    IEnumerator ResetKnockback(Rigidbody2D targetRigidbody, PlayerMovementController targetMovementController)
+    private IEnumerator ResetKnockback(Rigidbody2D targetRigidbody, PlayerMovementController targetMovementController)
     {
         yield return new WaitForSeconds(_knockbackTime);
         targetRigidbody.linearVelocity = Vector2.zero;
         if (targetMovementController != null) targetMovementController.enabled = true;
+    }
+
+    private void IncreaseCombo()
+    {
+        if (_comboStage < _maxCombo)
+        {
+            _comboStage++;
+            _attackSpeed *= _attackSpeedMultiplier;
+            _animationController.SetAttackSpeed(_attackSpeed);
+            _comboTimer = _comboTime;
+        }
     }
 
     private void OnDrawGizmos()

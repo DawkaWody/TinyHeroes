@@ -10,6 +10,7 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] private string _jumpTriggerName = "jump";
     [SerializeField] private string _attack1TriggerName = "attack1";
     [SerializeField] private string _attack2TriggerName = "attack2";
+    [SerializeField] private string _attackSpeedFloatName = "attackSpeed";
 
     [Header("Animator States")]
     [SerializeField] private string _jumpStateName = "Jump";
@@ -23,6 +24,7 @@ public class PlayerAnimationController : MonoBehaviour
     private int _jumpTriggerId;
     private int _attack1TriggerId;
     private int _attack2TriggerId;
+    private int _attackSpeedFloatId;
 
     private float _attack1ClipLength;
     private float _attack2ClipLength;
@@ -39,6 +41,7 @@ public class PlayerAnimationController : MonoBehaviour
         _jumpTriggerId = Animator.StringToHash(_jumpTriggerName);
         _attack1TriggerId = Animator.StringToHash(_attack1TriggerName);
         _attack2TriggerId = Animator.StringToHash(_attack2TriggerName);
+        _attackSpeedFloatId = Animator.StringToHash(_attackSpeedFloatName);
 
         foreach (AnimationClip c in _animator.runtimeAnimatorController.animationClips)
         {
@@ -80,6 +83,11 @@ public class PlayerAnimationController : MonoBehaviour
         else if (variant == 2)
             return _attack2ClipLength;
         return -1;
+    }
+
+    public void SetAttackSpeed(float speed)
+    {
+        _animator.SetFloat(_attackSpeedFloatId, speed);
     }
 
     public bool IsInAirOrJumping()
