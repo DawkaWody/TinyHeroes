@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerAnimationController))]
 [RequireComponent(typeof(PlayerInputHandler))]
 [RequireComponent(typeof(PlayerPowerupController))]
+[RequireComponent(typeof(PlayerFXController))]
 public class PlayerAttackController : MonoBehaviour
 {
     [Header("Attack Settings")]
@@ -33,12 +34,14 @@ public class PlayerAttackController : MonoBehaviour
     private PlayerAnimationController _animationController;
     private PlayerInputHandler _inputHandler;
     private PlayerPowerupController _powerupController;
+    private PlayerFXController _fxController;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _animationController = GetComponent<PlayerAnimationController>();
         _inputHandler = GetComponent<PlayerInputHandler>();
         _powerupController = GetComponent<PlayerPowerupController>();
+        _fxController = GetComponent<PlayerFXController>();
 
         _attackCooldown = 0;
         _comboTimer = 0;
@@ -81,6 +84,7 @@ public class PlayerAttackController : MonoBehaviour
             {
                 ApplyKnockback(hit.transform);
                 IncreaseCombo();
+                _fxController.PlayAttackEffect(new Vector2(_handPoint.transform.position.x, _handPoint.transform.position.y));
             }
         }
     }
@@ -93,7 +97,7 @@ public class PlayerAttackController : MonoBehaviour
 
         if (targetMovementController != null) targetMovementController.enabled = false;
         Vector2 direction = (target.position - transform.position).normalized;
-        direction += Vector2.up * _knockbackStrength / 3;
+        direction += Vector2.up * _knockbackStrength / 6;
 
         targetRigidbody.AddForce(direction * _knockbackStrength, ForceMode2D.Impulse);
         _knockbackResetCo = StartCoroutine(ResetKnockback(targetRigidbody, targetMovementController));

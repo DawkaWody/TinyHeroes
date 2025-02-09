@@ -5461,6 +5461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dustFxPrefab: {fileID: 5878658025718041718, guid: aad6841df8728814d9c94498edcd7e1d, type: 3}
+  _attackEffect: {fileID: 1286209964058236464, guid: 32a5170696a7d1042bd32e8f93d02f2b, type: 3}
 --- !u!114 &1892244961
 MonoBehaviour:
   m_ObjectHideFlags: 0

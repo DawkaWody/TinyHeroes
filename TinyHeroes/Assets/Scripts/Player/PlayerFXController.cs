@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerFXController : MonoBehaviour
 {
     [SerializeField] private GameObject _dustFxPrefab;
-    
+    [SerializeField] private GameObject _attackEffect;
 
     public void PlayDoubleJumpDust(Vector2 position)
     {
@@ -19,5 +19,10 @@ public class PlayerFXController : MonoBehaviour
         Dust dust = dustFx.GetComponent<Dust>();
         dust.SetType(1);
         dust.Play();
+    }
+
+    public void PlayAttackEffect(Vector2 position) 
+    {
+        Instantiate(_attackEffect, position, Quaternion.identity);
     }
 }
