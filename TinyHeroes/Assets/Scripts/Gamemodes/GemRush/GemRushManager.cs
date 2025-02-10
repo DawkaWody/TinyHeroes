@@ -29,7 +29,7 @@ public class GemRushManager : MonoBehaviour
             Debug.Log("Game end");
             foreach (int playerIndex in GetWinners())
             {
-                Debug.Log("Player " + GLOBALS.playerColors[playerIndex] + " wins!");
+                Debug.Log("Player " + GLOBALS.playerColorNames[playerIndex] + " wins!");
             }    
         }
         else 

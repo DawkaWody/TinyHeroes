@@ -37,7 +37,7 @@ public class KotpManager : MonoBehaviour
                 DisableAllPlatforms();
                 foreach (int playerIndex in GetWinners())
                 {
-                    Debug.Log("Player " + GLOBALS.playerColors[playerIndex] + " wins");
+                    Debug.Log("Player " + GLOBALS.playerColorNames[playerIndex] + " wins");
                 }
 
                 _isPlaying = false;
@@ -75,12 +75,12 @@ public class KotpManager : MonoBehaviour
 
     List<int> GetWinners()
     {
-        List<int> scores = new List<int>(new int[GLOBALS.playerColors.Count]);
+        List<int> scores = new List<int>(new int[GLOBALS.playerColorNames.Count]);
         foreach (KotpPlatform platform in _platforms)
         {
             if (platform.color == "") continue;
 
-            scores[GLOBALS.playerColors.IndexOf(platform.color)]++;
+            scores[GLOBALS.playerColorNames.IndexOf(platform.color)]++;
         }
 
         int maxScore = scores.Max();

@@ -4,6 +4,8 @@ using UnityEngine.Tilemaps;
 
 public class KotpPlatform : MonoBehaviour
 {
+    [SerializeField] private ProgressBar _capturingBar;
+
     [HideInInspector] public string color;
     [HideInInspector] public float captureTime;
 
@@ -11,22 +13,27 @@ public class KotpPlatform : MonoBehaviour
     private float _standingTimer;
     private bool _capturing;
 
+    private int _pinkFlagTriggerId;
+    private int _blueFlagTriggerId;
+    private int _whiteFlagTriggerId;
+    private int _defaultFlagTriggerId;
 
     private Animator _flagAnimator;
 
-    private static readonly int PinkFlagTrigger = Animator.StringToHash("PinkFlag");
-    private static readonly int BlueFlagTrigger = Animator.StringToHash("BlueFlag");
-    private static readonly int WhiteFlagTrigger = Animator.StringToHash("WhiteFlag");
-    private static readonly int DefaultFlagTrigger = Animator.StringToHash("DefaultFlag");
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         _playersOn = new List<int>();
 
         _flagAnimator = GetComponentInChildren<Animator>();
 
-        _flagAnimator.SetTrigger(DefaultFlagTrigger);
+        _pinkFlagTriggerId = Animator.StringToHash("PinkFlag");
+        _blueFlagTriggerId = Animator.StringToHash("BlueFlag");
+        _whiteFlagTriggerId = Animator.StringToHash("WhiteFlag");
+        _defaultFlagTriggerId = Animator.StringToHash("DefaultFlag");
+
+        _flagAnimator.SetTrigger(_defaultFlagTriggerId);
     }
 
     // Update is called once per frame
@@ -38,31 +45,36 @@ public class KotpPlatform : MonoBehaviour
             {
                 _capturing = true;
                 _standingTimer = captureTime;
+
+                _capturingBar.SetColor(GLOBALS.playerColors[_playersOn[0]]);
+                _capturingBar.Fill(captureTime);
             }
             _standingTimer -= Time.deltaTime;
 
             if (_standingTimer <= 0f)
             {
-                color = GLOBALS.playerColors[_playersOn[0]];
+                color = GLOBALS.playerColorNames[_playersOn[0]];
 
-                if (color.Equals("pink")) {
-                    _flagAnimator.SetTrigger(PinkFlagTrigger);
-                    Debug.Log("pink");
+                switch (color)
+                {
+                    case "pink":
+                        _flagAnimator.SetTrigger(_pinkFlagTriggerId);
+                        break;
+                    case "blue":
+                        _flagAnimator.SetTrigger(_blueFlagTriggerId);
+                        break;
+                    case "white":
+                        _flagAnimator.SetTrigger(_whiteFlagTriggerId);
+                        break;
                 }
-                else if (color.Equals("blue")) {
-                    _flagAnimator.SetTrigger(BlueFlagTrigger);
-                    Debug.Log("blue");
-                }
-                    
-                else if (color.Equals("white")) {
-                    _flagAnimator.SetTrigger(WhiteFlagTrigger);
-                    Debug.Log("white");
-                }
+
+                _capturingBar.Hide();
             }
         }
         else
         {
             _capturing = false;
+            _capturingBar.Hide();
         }
     }
 
