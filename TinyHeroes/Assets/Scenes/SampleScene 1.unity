@@ -463,7 +463,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5970639291792539768, guid: 9c7ec22a3ac945f47adf7cf00d6e9afe, type: 3}
+  m_Sprite: {fileID: 3309169943859649258, guid: 839bf0316c828ac43bc7e5901735a421, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5342,6 +5342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dustFxPrefab: {fileID: 5878658025718041718, guid: aad6841df8728814d9c94498edcd7e1d, type: 3}
+  _attackEffect: {fileID: 0}
 --- !u!114 &1892244961
 MonoBehaviour:
   m_ObjectHideFlags: 0
