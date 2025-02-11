@@ -45,8 +45,6 @@ public class ProgressBar : MonoBehaviour
     public void SetColor(Color color)
     {
         _fillImage.color = color;
-        Debug.Log("Color set to " + color);
-        Debug.Log("Alpha value: " + _fillImage.color.a);
     }
 
     public void Hide()

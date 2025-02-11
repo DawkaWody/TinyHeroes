@@ -70,6 +70,7 @@ public class KotpManager : MonoBehaviour
         foreach (KotpPlatform platform in _platforms)
         {
             platform.enabled = false;
+            platform.capturingBar.Hide();
         }
     }
 

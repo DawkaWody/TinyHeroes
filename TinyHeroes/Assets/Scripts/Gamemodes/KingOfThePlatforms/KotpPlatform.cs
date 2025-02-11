@@ -4,7 +4,7 @@ using UnityEngine.Tilemaps;
 
 public class KotpPlatform : MonoBehaviour
 {
-    [SerializeField] private ProgressBar _capturingBar;
+    public ProgressBar capturingBar;
 
     [HideInInspector] public string color;
     [HideInInspector] public float captureTime;
@@ -41,13 +41,13 @@ public class KotpPlatform : MonoBehaviour
     {
         if (_playersOn.Count == 1)
         {
-            if (!_capturing)
+            if (!_capturing && color != GLOBALS.playerColorNames[_playersOn[0]])
             {
                 _capturing = true;
                 _standingTimer = captureTime;
 
-                _capturingBar.SetColor(GLOBALS.playerColors[_playersOn[0]]);
-                _capturingBar.Fill(captureTime);
+                capturingBar.SetColor(GLOBALS.playerColors[_playersOn[0]]);
+                capturingBar.Fill(captureTime);
             }
             _standingTimer -= Time.deltaTime;
 
@@ -68,23 +68,20 @@ public class KotpPlatform : MonoBehaviour
                         break;
                 }
 
-                _capturingBar.Hide();
+                capturingBar.Hide();
             }
         }
         else
         {
             _capturing = false;
-            _capturingBar.Hide();
+            capturingBar.Hide();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(GLOBALS.playerTag))
-        {
             _playersOn.Add(other.GetComponentInParent<PlayerData>().index);
-            Debug.Log(other.gameObject.name);
-        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
