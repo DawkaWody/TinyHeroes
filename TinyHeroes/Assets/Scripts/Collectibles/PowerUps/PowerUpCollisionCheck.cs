@@ -11,7 +11,7 @@ public class PowerUpCollisionCheck : MonoBehaviour
 
     void Start()
     {
-        _powerUpIcon = GetComponent<SpriteRenderer>().sprite;
+        _powerUpIcon = GetComponentInChildren<SpriteRenderer>().sprite;
         _spawnPointManager = SpawnPointManager.Instance;
         _collected = false;
     }
@@ -27,7 +27,7 @@ public class PowerUpCollisionCheck : MonoBehaviour
             playerPowerupController.CollectPowerUp(gameObject.GetComponent<IPowerUp>());
 
             _spawnPointManager.SetSpawnPointAvailability(gameObject.transform, true);
-            transform.GetComponent<SpriteRenderer>().enabled = false;
+            transform.GetComponentInChildren<SpriteRenderer>().enabled = false;
         }
     }
 }
