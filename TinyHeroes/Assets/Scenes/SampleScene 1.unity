@@ -2284,6 +2284,7 @@ MonoBehaviour:
   _powerUpContainer: {fileID: 1334429937}
   _players:
   - {fileID: 1892244953}
+  - {fileID: 988702850}
   _minimumSpawnDistance: 3
   diamondLayer:
     serializedVersion: 2
