@@ -85,6 +85,7 @@ public class PlayerAttackController : MonoBehaviour
                 ApplyKnockback(hit.transform);
                 IncreaseCombo();
                 _fxController.PlayAttackEffect(new Vector2(_handPoint.transform.position.x, _handPoint.transform.position.y));
+                hit.GetComponentInParent<PlayerFXController>().PlayHitEffect();
             }
         }
     }

@@ -13,6 +13,10 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private float _fallPanYTime = 0.35f;
     public float fallSpeedYDampingChangeThreshold = -15f;
 
+    [Header("Camera Shake")]
+    [SerializeField] private CinemachineImpulseListener _impulseListener;
+    [SerializeField] private CameraShakeProfileSO _globalCameraShakeProfile;
+
     [HideInInspector] public bool isLerpingYDamping;
     [HideInInspector] public bool lerpedFromPlayerFalling;
 
@@ -85,6 +89,28 @@ public class CameraManager : MonoBehaviour
         }
 
         isLerpingYDamping = false;
+    }
+
+    #endregion
+
+    #region Camera Shake
+
+    public void CameraShake(CinemachineImpulseSource impulseSource)
+    {
+        CameraShake(impulseSource, _globalCameraShakeProfile);
+    }
+
+    public void CameraShake(CinemachineImpulseSource impulseSource, CameraShakeProfileSO profile)
+    {
+        CinemachineImpulseDefinition impulseDefinition = impulseSource.ImpulseDefinition;
+        impulseDefinition.ImpulseDuration = profile.impulseTime;
+        impulseDefinition.CustomImpulseShape = profile.impulseCurve;
+        impulseSource.DefaultVelocity = profile.defaultVelocity;
+        _impulseListener.ReactionSettings.AmplitudeGain = profile.amplitude;
+        _impulseListener.ReactionSettings.FrequencyGain = profile.frequency;
+        _impulseListener.ReactionSettings.Duration = profile.duration;
+
+        impulseSource.GenerateImpulseWithForce(profile.impulseForce);
     }
 
     #endregion

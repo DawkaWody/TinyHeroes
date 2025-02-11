@@ -2589,6 +2589,8 @@ GameObject:
   - component: {fileID: 988702845}
   - component: {fileID: 988702844}
   - component: {fileID: 988702843}
+  - component: {fileID: 988702851}
+  - component: {fileID: 988702852}
   m_Layer: 0
   m_Name: Test_Player2
   m_TagString: Player
@@ -2795,6 +2797,74 @@ Transform:
   - {fileID: 1512710540}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988702851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988702842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: -1, z: 0}
+--- !u!114 &988702852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988702842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878b921bb7bc9134b816d35170d0268d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dustFxPrefab: {fileID: 0}
+  _attackEffect: {fileID: 0}
+  _hitShakeEffect: {fileID: 11400000, guid: 7eecf741d6b7ab444aef3d2b5d171d3c, type: 2}
 --- !u!1 &992805961
 GameObject:
   m_ObjectHideFlags: 0
@@ -3941,6 +4011,8 @@ MonoBehaviour:
   _fallPanAmount: 0.25
   _fallPanYTime: 0.35
   fallSpeedYDampingChangeThreshold: -15
+  _impulseListener: {fileID: 1839488048}
+  _globalCameraShakeProfile: {fileID: 11400000, guid: 7eecf741d6b7ab444aef3d2b5d171d3c, type: 2}
   isLerpingYDamping: 0
   lerpedFromPlayerFalling: 0
 --- !u!1 &1151699736
@@ -5027,6 +5099,7 @@ GameObject:
   - component: {fileID: 1839488045}
   - component: {fileID: 1839488044}
   - component: {fileID: 1839488047}
+  - component: {fileID: 1839488048}
   m_Layer: 0
   m_Name: PlayerCenterFollowCam
   m_TagString: Untagged
@@ -5135,6 +5208,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8a05de0ac134f4f9d01bef6b9da077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1839488048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839488043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApplyAfter: 2
+  ChannelMask: 1
+  Gain: 1
+  Use2DDistance: 0
+  UseCameraSpace: 1
+  ReactionSettings:
+    m_SecondaryNoise: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1842544299
 GameObject:
   m_ObjectHideFlags: 0
@@ -5306,6 +5402,7 @@ GameObject:
   - component: {fileID: 1892244961}
   - component: {fileID: 1892244963}
   - component: {fileID: 1892244962}
+  - component: {fileID: 1892244965}
   m_Layer: 8
   m_Name: PLAYER
   m_TagString: Player
@@ -5644,6 +5741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dustFxPrefab: {fileID: 5878658025718041718, guid: aad6841df8728814d9c94498edcd7e1d, type: 3}
   _attackEffect: {fileID: 1286209964058236464, guid: 32a5170696a7d1042bd32e8f93d02f2b, type: 3}
+  _hitShakeEffect: {fileID: 11400000, guid: 7eecf741d6b7ab444aef3d2b5d171d3c, type: 2}
 --- !u!114 &1892244961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5713,6 +5811,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+--- !u!114 &1892244965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892244951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: -1, z: 0}
 --- !u!1 &1905587860
 GameObject:
   m_ObjectHideFlags: 0

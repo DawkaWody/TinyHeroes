@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1e9b741e8ce1345ba9f6118a1af07c, type: 3}
+  m_Name: BombCameraShake
+  m_EditorClassIdentifier: 
+  impulseTime: 0.2
+  impulseForce: 1
+  defaultVelocity: {x: 0, y: -1, z: 0}
+  impulseCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -2.3310306
+      outSlope: -2.3310306
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.07848867
+      value: 0.8170405
+      inSlope: -0.3137653
+      outSlope: -0.3137653
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.29163975
+      value: 1.1801434
+      inSlope: -0.30398238
+      outSlope: -0.30398238
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4426426
+      value: 0.8311056
+      inSlope: -0.06413996
+      outSlope: -0.06413996
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5959306
+      value: 1.1657616
+      inSlope: -0.633088
+      outSlope: -0.633088
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.68170017
+      value: 0.8699113
+      inSlope: -1.0105153
+      outSlope: -1.0105153
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8841648
+      value: 1.1590977
+      inSlope: 0.02742356
+      outSlope: 0.02742356
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -1.3734831
+      outSlope: -1.3734831
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  amplitude: 1
+  frequency: 1
+  duration: 1

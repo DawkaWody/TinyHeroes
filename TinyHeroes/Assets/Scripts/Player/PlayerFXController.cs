@@ -1,9 +1,19 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
+[RequireComponent(typeof(CinemachineImpulseSource))]
 public class PlayerFXController : MonoBehaviour
 {
     [SerializeField] private GameObject _dustFxPrefab;
     [SerializeField] private GameObject _attackEffect;
+    [SerializeField] private CameraShakeProfileSO _hitShakeEffect;
+
+    private CinemachineImpulseSource _impulseSource;
+
+    void Start()
+    {
+        _impulseSource = GetComponent<CinemachineImpulseSource>();
+    }
 
     public void PlayDoubleJumpDust(Vector2 position)
     {
@@ -25,4 +35,10 @@ public class PlayerFXController : MonoBehaviour
     {
         Instantiate(_attackEffect, position, Quaternion.identity);
     }
+
+    public void PlayHitEffect()
+    {
+        CameraManager.Instance.CameraShake(_impulseSource, _hitShakeEffect);
+    }
+
 }
