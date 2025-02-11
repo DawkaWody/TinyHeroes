@@ -2864,7 +2864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dustFxPrefab: {fileID: 0}
   _attackEffect: {fileID: 0}
-  _hitShakeEffect: {fileID: 11400000, guid: 7eecf741d6b7ab444aef3d2b5d171d3c, type: 2}
+  _hitShakeEffect: {fileID: 11400000, guid: 8c10947a39279ae4d87448daf3350b43, type: 2}
 --- !u!1 &992805961
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,7 +5220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ApplyAfter: 2
+  ApplyAfter: 3
   ChannelMask: 1
   Gain: 1
   Use2DDistance: 0

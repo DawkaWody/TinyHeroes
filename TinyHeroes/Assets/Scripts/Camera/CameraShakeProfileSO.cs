@@ -10,6 +10,7 @@ public class CameraShakeProfileSO : ScriptableObject
     public AnimationCurve impulseCurve;
 
     [Header("Impulse Listener Settings")] 
+    public float gain = 1f;
     public float amplitude = 1f;
     public float frequency = 1f;
     public float duration = 1f;

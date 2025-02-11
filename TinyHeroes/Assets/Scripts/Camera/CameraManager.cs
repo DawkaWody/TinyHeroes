@@ -106,6 +106,8 @@ public class CameraManager : MonoBehaviour
         impulseDefinition.ImpulseDuration = profile.impulseTime;
         impulseDefinition.CustomImpulseShape = profile.impulseCurve;
         impulseSource.DefaultVelocity = profile.defaultVelocity;
+        Debug.Log(profile.gain);
+        _impulseListener.Gain = profile.gain;
         _impulseListener.ReactionSettings.AmplitudeGain = profile.amplitude;
         _impulseListener.ReactionSettings.FrequencyGain = profile.frequency;
         _impulseListener.ReactionSettings.Duration = profile.duration;

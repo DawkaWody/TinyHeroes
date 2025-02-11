@@ -12,26 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1e9b741e8ce1345ba9f6118a1af07c, type: 3}
   m_Name: HitCameraShake
   m_EditorClassIdentifier: 
-  impulseTime: 0.4
-  impulseForce: 0.0001
-  defaultVelocity: {x: -0.001, y: -0.001, z: 0}
+  impulseTime: 0.2
+  impulseForce: 1.7
+  defaultVelocity: {x: 0, y: -0.5, z: 0}
   impulseCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: 0.0282809
-      outSlope: 0.0282809
+      inSlope: 0.105483525
+      outSlope: 0.105483525
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.49380916
-      value: 1.0139654
-      inSlope: 0.00034588203
-      outSlope: 0.00034588203
+      time: 0.28981537
+      value: 1.0305707
+      inSlope: -0.018882748
+      outSlope: -0.018882748
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.59703124
+      value: 0.9865624
+      inSlope: -0.05495122
+      outSlope: -0.05495122
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -39,8 +48,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: -0.027589137
-      outSlope: -0.027589137
+      inSlope: 0.033346575
+      outSlope: 0.033346575
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -48,6 +57,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  amplitude: 0.001
-  frequency: 0.0001
-  duration: 0.001
+  gain: 1
+  amplitude: 0.7
+  frequency: 0.5
+  duration: 1
