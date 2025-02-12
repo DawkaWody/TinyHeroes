@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HitCameraShake
   m_EditorClassIdentifier: 
   impulseTime: 0.2
-  impulseForce: 1.7
+  impulseForce: 1.4
   defaultVelocity: {x: 0, y: -0.5, z: 0}
   impulseCurve:
     serializedVersion: 2
@@ -57,7 +57,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  gain: 0.8
+  gain: 0.75
   amplitude: 0.7
   frequency: 0.5
   duration: 1
