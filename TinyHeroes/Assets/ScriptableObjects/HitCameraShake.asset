@@ -57,7 +57,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  gain: 1
+  gain: 0.8
   amplitude: 0.7
   frequency: 0.5
   duration: 1

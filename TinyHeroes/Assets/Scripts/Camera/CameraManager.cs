@@ -102,17 +102,21 @@ public class CameraManager : MonoBehaviour
 
     public void CameraShake(CinemachineImpulseSource impulseSource, CameraShakeProfileSO profile)
     {
+        CameraShake(impulseSource, profile, 1f);
+    }
+
+    public void CameraShake(CinemachineImpulseSource impulseSource, CameraShakeProfileSO profile, float forceMultiplier)
+    {
         CinemachineImpulseDefinition impulseDefinition = impulseSource.ImpulseDefinition;
         impulseDefinition.ImpulseDuration = profile.impulseTime;
         impulseDefinition.CustomImpulseShape = profile.impulseCurve;
         impulseSource.DefaultVelocity = profile.defaultVelocity;
-        Debug.Log(profile.gain);
         _impulseListener.Gain = profile.gain;
         _impulseListener.ReactionSettings.AmplitudeGain = profile.amplitude;
         _impulseListener.ReactionSettings.FrequencyGain = profile.frequency;
         _impulseListener.ReactionSettings.Duration = profile.duration;
 
-        impulseSource.GenerateImpulseWithForce(profile.impulseForce);
+        impulseSource.GenerateImpulseWithForce(profile.impulseForce * forceMultiplier);
     }
 
     #endregion

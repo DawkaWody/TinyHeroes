@@ -85,7 +85,7 @@ public class PlayerAttackController : MonoBehaviour
                 ApplyKnockback(hit.transform);
                 IncreaseCombo();
                 _fxController.PlayAttackEffect(new Vector2(_handPoint.transform.position.x, _handPoint.transform.position.y));
-                hit.GetComponentInParent<PlayerFXController>().PlayHitEffect();
+                hit.GetComponentInParent<PlayerFXController>().PlayHitEffect(_comboStage);
             }
         }
     }
@@ -113,13 +113,12 @@ public class PlayerAttackController : MonoBehaviour
 
     private void IncreaseCombo()
     {
-        if (_comboStage < _maxCombo)
-        {
-            _comboStage++;
-            _attackSpeed *= _attackSpeedMultiplier;
-            _animationController.SetAttackSpeed(_attackSpeed);
-            _comboTimer = _comboTime;
-        }
+        if (_comboStage >= _maxCombo) return;
+        
+        _comboStage++;
+        _attackSpeed *= _attackSpeedMultiplier;
+        _animationController.SetAttackSpeed(_attackSpeed);
+        _comboTimer = _comboTime;
     }
 
     private void OnDrawGizmos()

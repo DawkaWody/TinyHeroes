@@ -36,9 +36,9 @@ public class PlayerFXController : MonoBehaviour
         Instantiate(_attackEffect, position, Quaternion.identity);
     }
 
-    public void PlayHitEffect()
+    public void PlayHitEffect(int comboStage)
     {
-        CameraManager.Instance.CameraShake(_impulseSource, _hitShakeEffect);
+        CameraManager.Instance.CameraShake(_impulseSource, _hitShakeEffect, GLOBALS.hitShakeForceMultipliers[comboStage - 1]);
     }
 
 }
