@@ -43,11 +43,23 @@ TagManager:
   - name: Background
     uniqueID: 12910457
     locked: 0
+  - name: Level
+    uniqueID: 1241262155
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Collectibles
+    uniqueID: 204274625
+    locked: 0
+  - name: Player
+    uniqueID: 2537425099
+    locked: 0
   - name: Bomb
     uniqueID: 281270283
+    locked: 0
+  - name: FX
+    uniqueID: 3062859985
     locked: 0
   m_RenderingLayers:
   - Default
