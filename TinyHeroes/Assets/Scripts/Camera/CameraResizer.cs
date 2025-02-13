@@ -7,8 +7,8 @@ public class CameraResizer : MonoBehaviour
 {
     [SerializeField] private List<Transform> _players;
     [SerializeField] private Collider2D _levelBounds;
-    [SerializeField] private float _minZoom;
-    [SerializeField] private float _maxZoom;
+    [SerializeField] private float _minZoom = 4.9f;
+    [SerializeField] private float _maxZoom = 7.2f;
 
     private float _worldX;
     private Bounds _playerRect;

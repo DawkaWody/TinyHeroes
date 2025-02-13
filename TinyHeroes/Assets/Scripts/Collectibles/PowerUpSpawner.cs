@@ -12,7 +12,6 @@ public class PowerUpSpawner : MonoBehaviour
     [SerializeField] private GameObject[] _powerUpPrefabs;
 
     private SpawnPointManager _spawnPointManager;
-
     private List<Transform> _spawnPoints = new List<Transform>();
 
     private float _spawnTimer;
@@ -20,8 +19,8 @@ public class PowerUpSpawner : MonoBehaviour
     void Start()
     {
         _spawnPointManager = SpawnPointManager.Instance;
-
-        foreach (Transform spawnPoint in _powerUpContainer.transform) {
+        foreach (Transform spawnPoint in _powerUpContainer.transform) 
+        {
             _spawnPoints.Add(spawnPoint);
             _spawnPointManager.RegisterSpawnPoint(spawnPoint); 
         }
@@ -31,7 +30,8 @@ public class PowerUpSpawner : MonoBehaviour
     void Update()
     {
         _spawnTimer -= Time.deltaTime;
-        if (_spawnTimer <= 0) {
+        if (_spawnTimer <= 0) 
+        {
             SpawnPowerUp();
             _spawnTimer = _spawnRate;
         }
@@ -43,9 +43,11 @@ public class PowerUpSpawner : MonoBehaviour
         {
             bool isFarFromPlayers = true;
 
-            foreach (Transform player in _players) {
+            foreach (Transform player in _players) 
+            {
                 float distance = Vector3.Distance(p.transform.position, player.position);
-                if (distance < _minimumSpawnDistance) {
+                if (distance < _minimumSpawnDistance) 
+                {
                     isFarFromPlayers = false;
                     break;
                 }
@@ -59,7 +61,8 @@ public class PowerUpSpawner : MonoBehaviour
     private void SpawnPowerUp()
     {
         List<Transform> validSpawnPoints = GetValidSpawnPoints();
-        if (validSpawnPoints.Count > 0) {
+        if (validSpawnPoints.Count > 0)
+        {
             Transform chosenSpawnPoint = validSpawnPoints[Random.Range(0, validSpawnPoints.Count)];
             GameObject powerUpToSpawn = _powerUpPrefabs[Random.Range(0, _powerUpPrefabs.Length)];
             Instantiate(powerUpToSpawn, chosenSpawnPoint.position, Quaternion.identity);

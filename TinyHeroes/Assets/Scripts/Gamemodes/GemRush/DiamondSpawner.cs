@@ -11,7 +11,6 @@ public class DiamondSpawner : MonoBehaviour
     [SerializeField] private LayerMask powerUpLayer;
 
     private SpawnPointManager _spawnPointManager;
-
     private List<GameObject> _diamonds = new();
 
     private float _spawnTimer;
@@ -20,7 +19,8 @@ public class DiamondSpawner : MonoBehaviour
     {
         _spawnPointManager = SpawnPointManager.Instance;
 
-        foreach (Transform d in _diamondContainer.transform) {
+        foreach (Transform d in _diamondContainer.transform) 
+        {
             _diamonds.Add(d.gameObject);
             d.gameObject.SetActive(false);
             _spawnPointManager.RegisterSpawnPoint(d);
@@ -31,7 +31,8 @@ public class DiamondSpawner : MonoBehaviour
     void Update()
     {
         _spawnTimer -= Time.deltaTime;
-        if (_spawnTimer <= 0) {
+        if (_spawnTimer <= 0) 
+        {
             SpawnDiamond();
             _spawnTimer = _spawnRate;
         }
@@ -43,9 +44,11 @@ public class DiamondSpawner : MonoBehaviour
         {
             bool isFarFromPlayers = true;
 
-            foreach (Transform player in _players) {
+            foreach (Transform player in _players) 
+            {
                 float distance = Vector3.Distance(d.transform.position, player.position);
-                if (distance < _minimumSpawnDistance) {
+                if (distance < _minimumSpawnDistance) 
+                {
                     isFarFromPlayers = false;
                     break;
                 }
@@ -59,7 +62,8 @@ public class DiamondSpawner : MonoBehaviour
     private void SpawnDiamond()
     {
         List<GameObject> validDiamonds = GetDiamondsFarFromPlayer();
-        if (validDiamonds.Count > 0) {
+        if (validDiamonds.Count > 0) 
+        {
             GameObject diamondToSpawn = validDiamonds[Random.Range(0, validDiamonds.Count)];
             diamondToSpawn.SetActive(true);
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3540176714122930019}
   - component: {fileID: 6186121782189926738}
   m_Layer: 3
-  m_Name: generic_platformer_tiles_19
+  m_Name: generic_platformer_tiles_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 1241262155
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -945797562, guid: 99b4b9bcef7e447478c6734e1136aedc, type: 3}
+  m_Sprite: {fileID: 52780431, guid: 99b4b9bcef7e447478c6734e1136aedc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
