@@ -5835,8 +5835,9 @@ MonoBehaviour:
   _comboTime: 1.8
   _attackSpeedMultiplier: 1.15
   _maxCombo: 3
-  _knockbackStrength: 4.8
-  _knockbackTime: 0.25
+  _knockbackHorizontalStrength: 6.5
+  _knockbackVerticalStrength: 0.75
+  _knockbackTime: 0.225
   _bodyColl: {fileID: 239672213}
   _feetColl: {fileID: 480874287}
 --- !u!114 &1892244962
