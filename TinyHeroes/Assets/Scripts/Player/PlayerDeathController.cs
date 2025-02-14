@@ -6,6 +6,8 @@ public class PlayerDeathController : MonoBehaviour
 {
     [SerializeField] private float _respawnTime = 2f;
 
+    private bool _isDead;
+
     private bool _hasSpriteRenderer;
     private bool _hasBodyColl;
     private bool _hasFeetColl;
@@ -23,6 +25,8 @@ public class PlayerDeathController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _isDead = false;
+
         _hasSpriteRenderer = TryGetComponent<SpriteRenderer>(out _spriteRenderer);
         _hasBodyColl = Utils.TryGetComponentInChildren<CapsuleCollider2D>(this.gameObject, out _bodyColl);
         _hasFeetColl = Utils.TryGetComponentInChildren<BoxCollider2D>(this.gameObject, out _feetColl);
@@ -33,6 +37,9 @@ public class PlayerDeathController : MonoBehaviour
 
     public void Die()
     {
+        if (_isDead) return;
+        _isDead = true;
+
         if (_hasSpriteRenderer) _spriteRenderer.enabled = false;
         if (_hasBodyColl) _bodyColl.enabled = false;
         if (_hasFeetColl) _feetColl.enabled = false;
@@ -53,5 +60,7 @@ public class PlayerDeathController : MonoBehaviour
         if (_hasFeetColl) _feetColl.enabled = true;
         if (_hasPlayerInput) _playerInput.enabled = true;
         if (_hasMovementController) _playerMovementController.enabled = true;
+
+        _isDead = false;
     }
 }

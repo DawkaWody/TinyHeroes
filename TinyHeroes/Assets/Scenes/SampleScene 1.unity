@@ -1687,6 +1687,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &623065647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623065648}
+  - component: {fileID: 623065649}
+  m_Layer: 0
+  m_Name: KillBound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &623065648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623065647}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -10.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 736408336}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &623065649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623065647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d97b0f0d060fd345a3a1047b4873bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players:
+  - {fileID: 1892244966}
+  - {fileID: 988702853}
 --- !u!1 &736204069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,6 +1854,7 @@ Transform:
   - {fileID: 909221304}
   - {fileID: 992805962}
   - {fileID: 1334429938}
+  - {fileID: 623065648}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779112190
@@ -2150,6 +2198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d97b0f0d060fd345a3a1047b4873bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players: []
 --- !u!1 &940305707
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,6 +2629,7 @@ GameObject:
   - component: {fileID: 988702843}
   - component: {fileID: 988702851}
   - component: {fileID: 988702852}
+  - component: {fileID: 988702853}
   m_Layer: 0
   m_Name: Test_Player2
   m_TagString: Player
@@ -2854,6 +2904,19 @@ MonoBehaviour:
   _dustFxPrefab: {fileID: 0}
   _attackEffect: {fileID: 0}
   _hitShakeEffect: {fileID: 11400000, guid: 8c10947a39279ae4d87448daf3350b43, type: 2}
+--- !u!114 &988702853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988702842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8505db158ad83e04da6204c7301d6321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _respawnTime: 2
 --- !u!1 &992805961
 GameObject:
   m_ObjectHideFlags: 0
