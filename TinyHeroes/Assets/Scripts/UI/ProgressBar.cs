@@ -5,8 +5,9 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
     private Image _fillImage;
-
     private Coroutine _fillingCo;
+
+    [SerializeField] private Image _borderImage;
 
     void Start()
     {
@@ -20,6 +21,11 @@ public class ProgressBar : MonoBehaviour
         if (_fillingCo != null)
         {
             StopCoroutine(_fillingCo);
+        }
+
+        if (_borderImage != null)
+        {
+            _borderImage.gameObject.SetActive(true);
         }
 
         _fillImage.gameObject.SetActive(true);
@@ -40,6 +46,11 @@ public class ProgressBar : MonoBehaviour
         }
 
         _fillImage.fillAmount = 1;
+
+        if (_borderImage != null)
+        {
+            _borderImage.gameObject.SetActive(false);
+        }
     }
 
     public void SetColor(Color color)
@@ -51,5 +62,10 @@ public class ProgressBar : MonoBehaviour
     {
         _fillImage.fillAmount = 0;
         _fillImage.gameObject.SetActive(false);
+
+        if (_borderImage != null)
+        {
+            _borderImage.gameObject.SetActive(false);
+        }
     }
 }
