@@ -178,6 +178,25 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1107 &-3865703201730848984
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: White
+  m_ChildStates: []
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 0}
 --- !u!1102 &-3687703256591691852
 AnimatorState:
   serializedVersion: 6
@@ -368,7 +387,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bleeb
+  m_Name: Player
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isMoving
@@ -415,13 +434,67 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: Blue
     m_StateMachine: {fileID: 1384548992726081795}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
+    m_DefaultWeight: 0
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: Pink
+    m_StateMachine: {fileID: 6093387639626649357}
+    m_Mask: {fileID: 0}
+    m_Motions:
+    - serializedVersion: 2
+      m_State: {fileID: 0}
+      m_Motion: {fileID: 7400000, guid: 77b14e3f4fd49554d8ae8bbf46474fdc, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: 0}
+      m_Motion: {fileID: 7400000, guid: 0d721a815fd71bb4093aa6182feebbe7, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: -215846336904230944}
+      m_Motion: {fileID: 7400000, guid: 0d721a815fd71bb4093aa6182feebbe7, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: 7105267152635107028}
+      m_Motion: {fileID: 7400000, guid: 77b14e3f4fd49554d8ae8bbf46474fdc, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: -4227658194339821639}
+      m_Motion: {fileID: 7400000, guid: 12dd9683c37c6e8419132c858b2498f8, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: 8242414702683077473}
+      m_Motion: {fileID: 7400000, guid: 5e82157bfacd6dc42b2ea96d8c684bf7, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: 7969413274967511412}
+      m_Motion: {fileID: 7400000, guid: b3d674fe82d386945ba4e3681e0bda56, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: -3687703256591691852}
+      m_Motion: {fileID: 7400000, guid: 26d50d827d97132468dd3fc902498b19, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: -3445899251222065635}
+      m_Motion: {fileID: 7400000, guid: 470bc47043d9ff24b9e6a871add6e49f, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: -1636453661918289412}
+      m_Motion: {fileID: 7400000, guid: 3e0d38dcd7c33374f90d2906de066a6a, type: 2}
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: 0
+    m_DefaultWeight: 1
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: White
+    m_StateMachine: {fileID: -3865703201730848984}
+    m_Mask: {fileID: 0}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: 0
     m_DefaultWeight: 0
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
@@ -433,7 +506,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: Blue
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7105267152635107028}
@@ -446,7 +519,7 @@ AnimatorStateMachine:
     m_Position: {x: 240, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8242414702683077473}
-    m_Position: {x: 240, y: 60, z: 0}
+    m_Position: {x: 260, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7969413274967511412}
     m_Position: {x: 460, y: 0, z: 0}
@@ -566,6 +639,25 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1107 &6093387639626649357
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pink
+  m_ChildStates: []
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 0}
 --- !u!1101 &6636545894933151037
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
