@@ -3454,6 +3454,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1892244953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1766609463
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1503406142473955375, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: decreaseTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503406142473955375, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: increaseTime
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503406142473955375, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: _speedMultiplier
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1912222
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900341903298713544, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347819426365605067, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
+      propertyPath: m_Name
+      value: Booster
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dbe905db7b8a6684397b79b2469057dd, type: 3}
 --- !u!1 &1778809636
 GameObject:
   m_ObjectHideFlags: 0
@@ -4093,6 +4162,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c2df39b2-8e81-4075-9e40-ea48ca64a11a
     m_ActionName: 'Player/Attack1[/Keyboard/w,/DualShock4GamepadHID/buttonWest]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 82ed8825-7347-4420-a0f9-1f9944a8b7b4
+    m_ActionName: 'Player/PowerUp1[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ebd402c1-ab70-4cd6-ba11-df6dbb2e5e3c
+    m_ActionName: 'Player/PowerUp2[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -4114,8 +4191,8 @@ MonoBehaviour:
   _jumpActionName: Jump
   _runActionName: Sprint
   _attack1ActionName: Attack1
-  _powerUp1ActionName: 
-  _powerUp2ActionName: 
+  _powerUp1ActionName: PowerUp1
+  _powerUp2ActionName: PowerUp2
   Movement: {x: 0, y: 0}
   JumpWasPressed: 0
   JumpIsHeld: 0
@@ -4226,7 +4303,8 @@ MonoBehaviour:
   _comboTime: 0
   _attackSpeedMultiplier: 0
   _maxCombo: 0
-  _knockbackStrength: 0
+  _knockbackHorizontalStrength: 0
+  _knockbackVerticalStrength: 0
   _knockbackTime: 0
   _bodyColl: {fileID: 239672213}
   _feetColl: {fileID: 0}
@@ -4404,3 +4482,4 @@ SceneRoots:
   - {fileID: 527283938}
   - {fileID: 146989867}
   - {fileID: 1428310342}
+  - {fileID: 1766609463}
