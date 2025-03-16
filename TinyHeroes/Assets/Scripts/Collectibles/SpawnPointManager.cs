@@ -5,7 +5,7 @@ public class SpawnPointManager : MonoBehaviour
 {
     public static SpawnPointManager Instance { get; private set; }
 
-    private Dictionary<Transform, bool> _spawnPoints = new Dictionary<Transform, bool>();
+    private Dictionary<Transform, bool> _spawnPoints = new();
     
     private void Awake()
     {

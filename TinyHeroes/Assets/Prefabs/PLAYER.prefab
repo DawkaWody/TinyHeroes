@@ -430,7 +430,7 @@ MonoBehaviour:
     m_ActionId: ebd402c1-ab70-4cd6-ba11-df6dbb2e5e3c
     m_ActionName: 'Player/PowerUp2[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

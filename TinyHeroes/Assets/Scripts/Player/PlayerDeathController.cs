@@ -43,7 +43,7 @@ public class PlayerDeathController : MonoBehaviour
         if (_hasSpriteRenderer) _spriteRenderer.enabled = false;
         if (_hasBodyColl) _bodyColl.enabled = false;
         if (_hasFeetColl) _feetColl.enabled = false;
-        if (_hasPlayerInput) _playerInput.enabled = false;
+        // if (_hasPlayerInput) _playerInput.enabled = false;
         if (_hasMovementController) _playerMovementController.enabled = false;
         if (_hasRigidbody) _rigidbody.linearVelocity = Vector2.zero;
         StartCoroutine(RespawnCo());
@@ -58,7 +58,7 @@ public class PlayerDeathController : MonoBehaviour
         if (_hasSpriteRenderer) _spriteRenderer.enabled = true;
         if (_hasBodyColl) _bodyColl.enabled = true;
         if (_hasFeetColl) _feetColl.enabled = true;
-        if (_hasPlayerInput) _playerInput.enabled = true;
+        // if (_hasPlayerInput) _playerInput.enabled = true;
         if (_hasMovementController) _playerMovementController.enabled = true;
 
         _isDead = false;

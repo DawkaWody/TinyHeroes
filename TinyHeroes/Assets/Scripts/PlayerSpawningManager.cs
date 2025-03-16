@@ -5,8 +5,9 @@ public class PlayerSpawningManager : MonoBehaviour
 {
     public static PlayerSpawningManager Instance { get; private set; }
 
+    public KillBound killBound;
+    public List<Transform> players;
     [SerializeField] private GameObject _spawnPointContainer;
-    [SerializeField] private List<Transform> _players;
     [SerializeField] private float _minimumSpawnDistance;
 
     private List<Transform> _spawnPoints = new();
@@ -34,7 +35,7 @@ public class PlayerSpawningManager : MonoBehaviour
         {
             bool isFarFromPlayers = true;
 
-            foreach (Transform player in _players)
+            foreach (Transform player in players)
             {
                 float distance = Vector3.Distance(p.transform.position, player.position);
                 if (distance < _minimumSpawnDistance)

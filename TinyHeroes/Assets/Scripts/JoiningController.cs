@@ -1,9 +1,11 @@
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class JoiningController : MonoBehaviour
 {
+    private int _playerCount = 0;
 
     private PlayerInputManager _playerInputManager;
 
@@ -24,6 +26,17 @@ public class JoiningController : MonoBehaviour
 
     public void SetupPlayer(PlayerInput playerInput)
     {
-        _playerInputManager.playerPrefab = this.gameObject;
+        StartCoroutine(SetupPlayerWithDelay(playerInput));
+    }
+
+    private IEnumerator SetupPlayerWithDelay(PlayerInput playerInput)
+    {
+        yield return new WaitForEndOfFrame();
+        _playerCount++;
+        playerInput.GetComponent<PlayerData>().index = _playerCount;
+        playerInput.GetComponent<PlayerAnimationController>().ActivateLayer(_playerCount - 1);
+
+        PlayerSpawningManager.Instance.players.Add(playerInput.transform);
+        PlayerSpawningManager.Instance.killBound.players.Add(playerInput.GetComponent<PlayerDeathController>());
     }
 }

@@ -95,4 +95,9 @@ public class PlayerAnimationController : MonoBehaviour
         AnimatorStateInfo state = _animator.GetCurrentAnimatorStateInfo(0);
         return state.IsName(_jumpStateName) || state.IsName(_inAirStateName);
     }
+
+    public void ActivateLayer(int layerIdx)
+    {
+        _animator.SetLayerWeight(layerIdx, 1);
+    }
 }

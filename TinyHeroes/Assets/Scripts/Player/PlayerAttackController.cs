@@ -26,6 +26,7 @@ public class PlayerAttackController : MonoBehaviour
     [SerializeField] private Collider2D _bodyColl;
     [SerializeField] private Collider2D _feetColl;
 
+    private Transform _lastHit;
     private float _attackCooldown;
     private float _comboTimer;
     private int _comboStage;
@@ -81,14 +82,17 @@ public class PlayerAttackController : MonoBehaviour
                      _attackRange * _powerupController.attackRangeMultiplier))
         {
             if (hit.CompareTag(GLOBALS.playerTag) && hit != _bodyColl && hit != _feetColl 
-                && !hit.GetComponentInParent<PlayerPowerupController>().isInvincible)
+                && !hit.GetComponentInParent<PlayerPowerupController>().isInvincible && hit.transform.parent != _lastHit)
             {
+                _lastHit = hit.transform.parent;
                 ApplyKnockback(hit.transform);
                 IncreaseCombo();
                 _fxController.PlayAttackEffect(new Vector2(_handPoint.transform.position.x, _handPoint.transform.position.y));
                 hit.GetComponentInParent<PlayerFXController>().PlayHitEffect(_comboStage);
             }
         }
+
+        _lastHit = null;
     }
 
     private void ApplyKnockback(Transform target)
@@ -97,6 +101,7 @@ public class PlayerAttackController : MonoBehaviour
         Rigidbody2D targetRigidbody = target.GetComponentInParent<Rigidbody2D>();
         PlayerMovementController targetMovementController = target.GetComponentInParent<PlayerMovementController>();
 
+        targetRigidbody.linearVelocity = Vector2.zero;
         if (targetMovementController != null) targetMovementController.enabled = false;
         Vector2 direction = (target.position - transform.position).normalized;
         direction += Vector2.up * _knockbackVerticalStrength;
