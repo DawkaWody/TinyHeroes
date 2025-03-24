@@ -7,6 +7,7 @@ public class PlayerFXController : MonoBehaviour
     [SerializeField] private GameObject _dustFxPrefab;
     [SerializeField] private GameObject _attackEffect;
     [SerializeField] private CameraShakeProfileSO _hitShakeEffect;
+    [SerializeField] private GameObject _speedBoostEffect;
 
     private CinemachineImpulseSource _impulseSource;
 
@@ -41,4 +42,10 @@ public class PlayerFXController : MonoBehaviour
         CameraManager.Instance.CameraShake(_impulseSource, _hitShakeEffect, GLOBALS.hitShakeForceMultipliers[comboStage - 1]);
     }
 
+    public GameObject PlaySpeedBoostEffect(Vector2 position)
+    {
+        GameObject particleEffect = Instantiate(_speedBoostEffect, position, Quaternion.identity);
+
+        return particleEffect;
+    }
 }
