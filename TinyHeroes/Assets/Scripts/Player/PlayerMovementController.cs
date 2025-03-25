@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInputHandler))]
 [RequireComponent(typeof(PlayerFXController))]
 [RequireComponent(typeof(PlayerPowerupController))]
+[RequireComponent(typeof(PlayerKnockbackController))]
 public class PlayerMovementController : MonoBehaviour
 {
     #region Variables
@@ -53,6 +54,7 @@ public class PlayerMovementController : MonoBehaviour
     private PlayerInputHandler _inputHandler;
     private PlayerFXController _fxController;
     private PlayerPowerupController _powerupController;
+    private PlayerKnockbackController _knockbackController;
 
     // before start of the game
     private bool canMove = true;
@@ -66,6 +68,7 @@ public class PlayerMovementController : MonoBehaviour
         _inputHandler = GetComponent<PlayerInputHandler>();
         _fxController = GetComponent<PlayerFXController>();
         _powerupController = GetComponent<PlayerPowerupController>();
+        _knockbackController = GetComponent<PlayerKnockbackController>();
 
         isFacingRight = true;
     }
@@ -103,6 +106,8 @@ public class PlayerMovementController : MonoBehaviour
         }
 
         CollisionChecks();
+        
+        if (_knockbackController.IsBeingKnockedBack) return;
         Jump();
 
         if (_isGrounded)

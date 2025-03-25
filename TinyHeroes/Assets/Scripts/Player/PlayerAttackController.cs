@@ -98,23 +98,12 @@ public class PlayerAttackController : MonoBehaviour
     private void ApplyKnockback(Transform target)
     {
         if (_knockbackResetCo != null) StopCoroutine(_knockbackResetCo);
-        Rigidbody2D targetRigidbody = target.GetComponentInParent<Rigidbody2D>();
+        PlayerKnockbackController targetKnockback = target.GetComponentInParent<PlayerKnockbackController>();
         PlayerMovementController targetMovementController = target.GetComponentInParent<PlayerMovementController>();
 
-        targetRigidbody.linearVelocity = Vector2.zero;
-        if (targetMovementController != null) targetMovementController.enabled = false;
         Vector2 direction = (target.position - transform.position).normalized;
-        direction += Vector2.up * _knockbackVerticalStrength;
 
-        targetRigidbody.AddForce(direction * _knockbackHorizontalStrength, ForceMode2D.Impulse);
-        _knockbackResetCo = StartCoroutine(ResetKnockback(targetRigidbody, targetMovementController));
-    }
-
-    private IEnumerator ResetKnockback(Rigidbody2D targetRigidbody, PlayerMovementController targetMovementController)
-    {
-        yield return new WaitForSeconds(_knockbackTime);
-        targetRigidbody.linearVelocity = Vector2.zero;
-        if (targetMovementController != null) targetMovementController.enabled = true;
+        StartCoroutine(targetKnockback.KnockbackAction(direction, Vector2.up, _inputHandler.Movement.x));
     }
 
     private void IncreaseCombo()

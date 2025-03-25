@@ -20,7 +20,6 @@ public class JoiningController : MonoBehaviour
     {
         if (InputSystem.devices.OfType<Gamepad>().Count() > 1)
         {
-            Debug.Log("Multiple gamepads connected");
         }
     }
 
