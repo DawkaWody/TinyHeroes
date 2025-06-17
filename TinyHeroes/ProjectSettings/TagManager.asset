@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Diamond
   - Bomb
+  - CameraManager
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.aseprite": {
-      "version": "1.1.8",
+      "version": "1.1.6",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -121,7 +121,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.19",
+      "version": "1.8.18",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -184,7 +184,7 @@
         "com.unity.2d.spriteshape": "10.0.7",
         "com.unity.2d.tilemap": "1.0.0",
         "com.unity.2d.tilemap.extras": "4.1.0",
-        "com.unity.2d.aseprite": "1.1.8"
+        "com.unity.2d.aseprite": "1.1.6"
       }
     },
     "com.unity.ide.rider": {
@@ -360,7 +360,7 @@
       }
     },
     "com.unity.searcher": {
-      "version": "4.9.3",
+      "version": "4.9.2",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
@@ -378,19 +378,19 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.authentication": {
-      "version": "3.4.0",
+      "version": "3.3.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
-        "com.unity.services.core": "1.14.0",
+        "com.unity.services.core": "1.13.0",
         "com.unity.nuget.newtonsoft-json": "3.2.1",
         "com.unity.modules.unitywebrequest": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
-      "version": "1.14.0",
+      "version": "1.13.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -471,14 +471,15 @@
       "source": "builtin",
       "dependencies": {
         "com.unity.render-pipelines.core": "17.0.3",
-        "com.unity.searcher": "4.9.3"
+        "com.unity.searcher": "4.9.2"
       }
     },
     "com.unity.splines": {
-      "version": "2.7.2",
+      "version": "2.6.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {
+        "com.unity.ugui": "1.0.0",
         "com.unity.mathematics": "1.2.1",
         "com.unity.settings-manager": "1.0.3"
       },

@@ -72,4 +72,11 @@ public class CameraPlayerFollow : MonoBehaviour
     }
 
     #endregion
+
+    public void SetTarget(Transform player)
+    {
+        _player = player;
+        _playerMovement = _player.GetComponent<PlayerMovementController>();
+        _isFacingRight = _playerMovement.isFacingRight;
+    }
 }

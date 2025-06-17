@@ -6,7 +6,8 @@ public class CameraManager : MonoBehaviour
 {
     public static CameraManager Instance { get; private set; }
 
-    [SerializeField] private CinemachineCamera[] _cameras;
+    [SerializeField] private CinemachineCamera _singleplayerCamera;
+    [SerializeField] private CinemachineCamera _multiplayerCamera;
 
     [Header("Player jump/fall camera controls")]
     [SerializeField] private float _fallPanAmount = 0.25f;
@@ -21,16 +22,14 @@ public class CameraManager : MonoBehaviour
     [HideInInspector] public bool lerpedFromPlayerFalling;
 
     private float _normYPanAmount;
-    private Vector2 _startingTrackedObjectOffest;
-
-    private Coroutine _lerpYPanCoroutine;
 
     private CinemachineCamera _activeCamera;
     private CinemachinePositionComposer _positionComposer;
+    private CinemachineTargetGroup _targetGroup;
 
     private void Awake()
     {
-        if (Instance != null)
+        if (Instance)
         {
             Debug.LogWarning("You are using multiple camera managers across the scene. Destroying this gameobject");
             Destroy(this);
@@ -39,25 +38,20 @@ public class CameraManager : MonoBehaviour
         
         Instance = this;
 
-        for (int i = 0; i < _cameras.Length; i++)
-        {
-            if (_cameras[i].enabled)
-            {
-                _activeCamera = _cameras[i];
-                _positionComposer = _activeCamera.GetComponent<CinemachinePositionComposer>();
-            }
-        }
+        _activeCamera = _singleplayerCamera;
+        _positionComposer = _activeCamera.GetComponent<CinemachinePositionComposer>();
+        _targetGroup = _multiplayerCamera.GetComponent<CinemachineCamera>().Target.TrackingTarget.GetComponent<CinemachineTargetGroup>();
 
         _normYPanAmount = _positionComposer.Damping.y;
 
-        _startingTrackedObjectOffest = _positionComposer.TargetOffset;
+        _multiplayerCamera.gameObject.SetActive(false);
     }
 
     #region Lerp Y Damping
 
     public  void LerpYDamping(bool playerFalling)
     {
-        _lerpYPanCoroutine = StartCoroutine(LerpYCo(playerFalling));
+        StartCoroutine(LerpYCo(playerFalling));
     }
 
     private IEnumerator LerpYCo(bool playerFalling)
@@ -117,6 +111,38 @@ public class CameraManager : MonoBehaviour
         _impulseListener.ReactionSettings.Duration = profile.duration;
 
         impulseSource.GenerateImpulseWithForce(profile.impulseForce * forceMultiplier);
+    }
+
+    #endregion
+
+    #region Camera switching
+
+    public void ChangeCameraToSingleplayer()
+    {
+        if (_activeCamera == _singleplayerCamera) return;
+        _activeCamera.gameObject.SetActive(false);
+        _singleplayerCamera.gameObject.SetActive(true);
+        _activeCamera = _singleplayerCamera;
+        _positionComposer = _activeCamera.GetComponent<CinemachinePositionComposer>();
+    }
+
+    public void ChangeCameraToMultiplayer()
+    {
+        if (_activeCamera == _multiplayerCamera) return;
+        _activeCamera.gameObject.SetActive(false);
+        _multiplayerCamera.gameObject.SetActive(true);
+        _activeCamera = _multiplayerCamera;
+        _positionComposer = _activeCamera.GetComponent<CinemachinePositionComposer>();
+    }
+
+    public void SetPlayerTarget(Transform player)
+    {
+        _singleplayerCamera.Target.TrackingTarget.GetComponent<CameraPlayerFollow>().SetTarget(player);
+    }
+
+    public void AddPlayerTarget(Transform player)
+    {
+        _targetGroup.AddMember(player, 1f, 1f);
     }
 
     #endregion

@@ -22,7 +22,7 @@ public class PlayerMovementController : MonoBehaviour
     private bool _isRunning;
 
     // Jumping variables
-    private float _verticalVeocity;
+    private float _verticalVelocity;
     private float _fastFallTime;
     private float _fastFallReleaseSpeed;
     private float _inAirTimer;
@@ -173,14 +173,14 @@ public class PlayerMovementController : MonoBehaviour
         {
             transform.Rotate(0f, 180f, 0f);
             isFacingRight = true;
-            _cameraFollow.Turn();
         }
         else
         {
             transform.Rotate(0f, -180f, 0f);
             isFacingRight = false;
-            _cameraFollow.Turn();
         }
+
+        _cameraFollow?.Turn();
     }
 
     #endregion
@@ -202,19 +202,19 @@ public class PlayerMovementController : MonoBehaviour
             if (_jumpBufferTimer > 0f)
                 _jumpReleasedDuringBuffer = true;
 
-            if (_isJumping && _verticalVeocity > 0f)
+            if (_isJumping && _verticalVelocity > 0f)
             {
                 if (_isPastApexThreshold)
                 {
                     _isPastApexThreshold = false;
                     _isFastFalling = true;
                     _fastFallTime = _movementStats.TimeForUpwardsCancel;
-                    _verticalVeocity = 0f;
+                    _verticalVelocity = 0f;
                 }
                 else
                 {
                     _isFastFalling = true;
-                    _fastFallReleaseSpeed = _verticalVeocity;
+                    _fastFallReleaseSpeed = _verticalVelocity;
                 }
             }
         }
@@ -227,7 +227,7 @@ public class PlayerMovementController : MonoBehaviour
             if (_jumpReleasedDuringBuffer)
             {
                 _isFastFalling = true;
-                _fastFallReleaseSpeed = _verticalVeocity;
+                _fastFallReleaseSpeed = _verticalVelocity;
             }
         }
 
@@ -246,7 +246,7 @@ public class PlayerMovementController : MonoBehaviour
         }
 
         // Landing
-        if ((_isJumping || _isFalling) && _isGrounded && _verticalVeocity <= 0f)
+        if ((_isJumping || _isFalling) && _isGrounded && _verticalVelocity <= 0f)
         {
             _isJumping = false;
             _isFalling = false;
@@ -255,7 +255,7 @@ public class PlayerMovementController : MonoBehaviour
             _fastFallTime = 0f;
             _numberOfJumpsUsed = 0;
 
-            _verticalVeocity = Physics2D.gravity.y;
+            _verticalVelocity = Physics2D.gravity.y;
         }
     }
 
@@ -266,7 +266,7 @@ public class PlayerMovementController : MonoBehaviour
 
         _jumpBufferTimer = 0f;
         _numberOfJumpsUsed += numberOfJumps;
-        _verticalVeocity = _movementStats.InitialJumpVelocity * _powerupController.jumpMultiplier;
+        _verticalVelocity = _movementStats.InitialJumpVelocity * _powerupController.jumpMultiplier;
 
         if (numberOfJumps >= 2)
             _fxController.PlayDoubleJumpDust(new Vector2(_feetColl.bounds.center.x, _feetColl.bounds.min.y));
@@ -280,10 +280,10 @@ public class PlayerMovementController : MonoBehaviour
             if (_bumpedHead)
                 _isFastFalling = true;
             
-            if (_verticalVeocity >= 0f)
+            if (_verticalVelocity >= 0f)
             {
                 _apexPoint = Mathf.InverseLerp(_movementStats.InitialJumpVelocity * _powerupController.jumpMultiplier, 
-                    0f, _verticalVeocity);
+                    0f, _verticalVelocity);
 
                 if (_apexPoint > _movementStats.ApexThreshold)
                 {
@@ -296,15 +296,15 @@ public class PlayerMovementController : MonoBehaviour
                     {
                         _timePastApexThreshold += Time.fixedDeltaTime;
                         if (_timePastApexThreshold < _movementStats.ApexHangTime)
-                            _verticalVeocity = 0f;
+                            _verticalVelocity = 0f;
                         else
-                            _verticalVeocity = -0.01f;
+                            _verticalVelocity = -0.01f;
                     }
                 }
 
                 else
                 {
-                    _verticalVeocity += _movementStats.Gravity * Time.fixedDeltaTime;
+                    _verticalVelocity += _movementStats.Gravity * Time.fixedDeltaTime;
                     if (_isPastApexThreshold)
                         _isPastApexThreshold = false;
                 }
@@ -312,10 +312,10 @@ public class PlayerMovementController : MonoBehaviour
 
             else if (!_isFastFalling)
             {
-                _verticalVeocity += _movementStats.Gravity * _movementStats.GravityOnReleaseMultiplier * Time.fixedDeltaTime;
+                _verticalVelocity += _movementStats.Gravity * _movementStats.GravityOnReleaseMultiplier * Time.fixedDeltaTime;
             }
 
-            else if (_verticalVeocity < 0f)
+            else if (_verticalVelocity < 0f)
             {
                 if (!_isFalling)
                     _isFalling = true;
@@ -325,9 +325,9 @@ public class PlayerMovementController : MonoBehaviour
         if (_isFastFalling)
         {
             if (_fastFallTime >= _movementStats.TimeForUpwardsCancel)
-                _verticalVeocity += _movementStats.Gravity * _movementStats.GravityOnReleaseMultiplier * Time.fixedDeltaTime;
+                _verticalVelocity += _movementStats.Gravity * _movementStats.GravityOnReleaseMultiplier * Time.fixedDeltaTime;
             else
-                _verticalVeocity = Mathf.Lerp(_fastFallReleaseSpeed, 0f, (_fastFallTime / _movementStats.TimeForUpwardsCancel));
+                _verticalVelocity = Mathf.Lerp(_fastFallReleaseSpeed, 0f, (_fastFallTime / _movementStats.TimeForUpwardsCancel));
 
             _fastFallTime += Time.fixedDeltaTime;
         }
@@ -337,11 +337,11 @@ public class PlayerMovementController : MonoBehaviour
             if (!_isFalling)
                 _isFalling = true;
 
-            _verticalVeocity += _movementStats.Gravity * Time.fixedDeltaTime;
+            _verticalVelocity += _movementStats.Gravity * Time.fixedDeltaTime;
         }
 
-        _verticalVeocity = Mathf.Clamp(_verticalVeocity, -_movementStats.MaxFallSpeed, 50f);
-        _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocityX, _verticalVeocity);
+        _verticalVelocity = Mathf.Clamp(_verticalVelocity, -_movementStats.MaxFallSpeed, 50f);
+        _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocityX, _verticalVelocity);
     }
 
     #endregion
