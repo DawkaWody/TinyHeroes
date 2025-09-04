@@ -18,7 +18,7 @@ public class PowerUpCollisionCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag(GLOBALS.playerTag) && !_collected)
+        if (other.gameObject.CompareTag(GLOBALS.PlayerTag) && !_collected)
         {
             _collected = true;
             PlayerPowerupController playerPowerupController = other.GetComponentInParent<PlayerPowerupController>();

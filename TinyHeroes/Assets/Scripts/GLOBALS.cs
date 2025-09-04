@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GLOBALS
 {
-    public static string playerTag = "Player";
+    public static string PlayerTag = "Player";
     public static string cameraManagerTag = "CameraManager";
     public static List<string> playerColorNames = new List<string>() { "blue", "pink", "white" };
     public static List<Color> playerColors = new List<Color>() { new Color(0.235f, 0.588f, 0.858f, 1),

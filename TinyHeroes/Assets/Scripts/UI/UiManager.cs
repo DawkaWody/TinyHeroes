@@ -27,6 +27,7 @@ public class UiManager : MonoBehaviour
 
         for (int i = 0; i < _playerUis.Length; i++)
         {
+            HidePlayerInfo(i);
             GameObject playerUi = _playerUis[i];
 
             foreach (Transform o in playerUi.transform)
@@ -49,17 +50,28 @@ public class UiManager : MonoBehaviour
         }
     }
 
+    public void ShowPlayerInfo(int playerIndex)
+    {
+        _playerUis[playerIndex].GetComponent<CanvasGroup>().alpha = 1f;
+    }
+
+    public void HidePlayerInfo(int playerIndex)
+    {
+        _playerUis[playerIndex].GetComponent<CanvasGroup>().alpha = 0f;
+    }
+
     public void ShowPowerUp(int playerIndex, int slot, Sprite icon)
     {
-        if (slot == 1)
+        switch (slot)
         {
-            _powerUp1Icons[playerIndex].sprite = icon;
-            _powerUp1Icons[playerIndex].gameObject.SetActive(true);
-        }
-        else if (slot == 2)
-        {
-            _powerUp2Icons[playerIndex].sprite = icon;
-            _powerUp2Icons[playerIndex].gameObject.SetActive(true);
+            case 1:
+                _powerUp1Icons[playerIndex].sprite = icon;
+                _powerUp1Icons[playerIndex].gameObject.SetActive(true);
+                break;
+            case 2:
+                _powerUp2Icons[playerIndex].sprite = icon;
+                _powerUp2Icons[playerIndex].gameObject.SetActive(true);
+                break;
         }
     }
 

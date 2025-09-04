@@ -80,13 +80,13 @@ public class KotpPlatform : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag(GLOBALS.playerTag))
+        if (other.CompareTag(GLOBALS.PlayerTag))
             _playersOn.Add(other.GetComponentInParent<PlayerData>().index);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag(GLOBALS.playerTag))
+        if (other.CompareTag(GLOBALS.PlayerTag))
             _playersOn.Remove(other.GetComponentInParent<PlayerData>().index);
     }
 }

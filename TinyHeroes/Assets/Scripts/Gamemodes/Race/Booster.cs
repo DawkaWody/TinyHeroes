@@ -10,7 +10,7 @@ public class Booster : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag(GLOBALS.playerTag))
+        if (other.gameObject.CompareTag(GLOBALS.PlayerTag))
         {
             PlayerPowerupController playerPowerupController = other.GetComponentInParent<PlayerPowerupController>();
             PlayerFXController fxController = other.GetComponentInParent<PlayerFXController>();

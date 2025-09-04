@@ -144,6 +144,11 @@ public class CameraManager : MonoBehaviour
     {
         _targetGroup.AddMember(player, 1f, 1f);
     }
+    
+    public void RemovePlayerTarget(Transform player)
+    {
+        _targetGroup.RemoveMember(player);
+    }
 
     #endregion
 }

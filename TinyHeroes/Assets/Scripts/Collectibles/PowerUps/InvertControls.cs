@@ -11,7 +11,7 @@ public class InvertControls : MonoBehaviour, IPowerUp
         int playerIndex = player.GetComponent<PlayerData>().index;
         List<PlayerPowerupController> players = new();
 
-        foreach (GameObject pl in GameObject.FindGameObjectsWithTag(GLOBALS.playerTag))
+        foreach (GameObject pl in GameObject.FindGameObjectsWithTag(GLOBALS.PlayerTag))
         {
             PlayerPowerupController target = pl.transform.GetComponent<PlayerPowerupController>();
             if (!target || target.blockOffensive || playerIndex == pl.GetComponent<PlayerData>().index) continue;

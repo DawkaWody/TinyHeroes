@@ -81,7 +81,7 @@ public class PlayerAttackController : MonoBehaviour
         foreach (Collider2D hit in Physics2D.OverlapCircleAll(attackPoint, 
                      _attackRange * _powerupController.attackRangeMultiplier))
         {
-            if (hit.CompareTag(GLOBALS.playerTag) && hit != _bodyColl && hit != _feetColl 
+            if (hit.CompareTag(GLOBALS.PlayerTag) && hit != _bodyColl && hit != _feetColl 
                 && !hit.GetComponentInParent<PlayerPowerupController>().isInvincible && hit.transform.parent != _lastHit)
             {
                 _lastHit = hit.transform.parent;
